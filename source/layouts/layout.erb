@@ -56,14 +56,17 @@ under the License.
   </head>
 
   <body class="<%= page_classes %>" data-languages="<%=h language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>">
+    <div class="header">
+      <%= image_tag "logo.png", class:'logo' %>
+      <a href="<%= current_page.data.url %>" data-language-name="<%= current_page.data.language %>" class="lang"><%= current_page.data.language %></a>
+    </div>
     <a href="#" id="nav-button">
       <span>
-        NAV
+        <%= current_page.data.menu %>
         <%= image_tag('navbar.png') %>
       </span>
     </a>
     <div class="toc-wrapper">
-      <%= image_tag "logo.png", class: 'logo' %>
       <% if language_tabs.any? %>
         <div class="lang-selector">
           <% language_tabs.each do |lang| %>

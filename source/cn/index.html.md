@@ -8,7 +8,11 @@ toc_footers:
 
 includes:
   
-lang: CN  
+language: English
+
+url: /en
+
+menu: 菜单
 
 search: true
 

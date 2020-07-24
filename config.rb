@@ -27,7 +27,7 @@ ready do
   require './lib/multilang.rb'
 end
 
-#activate :sprockets
+activate :sprockets
 
 activate :autoprefixer do |config|
   config.browsers = ['last 2 version', 'Firefox ESR']
@@ -56,7 +56,7 @@ end
 
 # Deploy Configuration
 # If you want Middleman to listen on a different port, you can set that below
-set :port, 4567
+set :port, 4568
 
 helpers do
   require './lib/toc_data.rb'

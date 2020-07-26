@@ -10,7 +10,7 @@ includes:
   
 language: 简体中文
 
-url: /cn
+url: /wbfapi/cn
 
 menu: Menu
 

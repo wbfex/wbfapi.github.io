@@ -10,7 +10,7 @@ includes:
   
 language: English
 
-url: /en
+url: /wbfapi/en
 
 menu: 菜单
 

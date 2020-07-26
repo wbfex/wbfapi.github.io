@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Exchange官方API文档</title>
+    <title>Exchange-official-API-docs</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -279,68 +279,65 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-8231c003.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print-de9c5ad8.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all-e9bde216.js"></script>
+    <link href="../stylesheets/screen-8231c003.css" rel="stylesheet" media="screen" />
+    <link href="../stylesheets/print-de9c5ad8.css" rel="stylesheet" media="print" />
+      <script src="../javascripts/all-e9bde216.js"></script>
 
     <script>
       $(function() { setupCodeCopy(); });
     </script>
   </head>
 
-  <body class="index" data-languages="[]">
+  <body class="en en_index" data-languages="[]">
     <div class="header">
-      <img src="images/logo-3d972316.png" class="logo" alt="" />
-      <a href="" class="lang">
-        <span></span>
-        <img src="images/down-c11a96e5.png" class="down" alt="" />
+      <img src="../images/logo-3d972316.png" class="logo" alt="" />
+      <a href="/cn" class="lang">
+        <span>简体中文</span>
+        <img src="../images/down-c11a96e5.png" class="down" alt="" />
       </a>
     </div>
     <a href="#" id="nav-button">
       <span>
-        <img src="images/navbar-cad8cdcb.png" alt="" />
+        <img src="../images/navbar-cad8cdcb.png" alt="" />
       </span>
     </a>
     <div class="toc-wrapper">
         <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="">
+          <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#45fa4e00db" class="toc-h1 toc-link" data-title="介绍">介绍</a>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction"><span id="Introduction">Introduction</span></a>
           </li>
           <li>
-            <a href="#60ff133549" class="toc-h1 toc-link" data-title="开始使用">开始使用</a>
+            <a href="#getting-started" class="toc-h1 toc-link" data-title="Getting Started"><span id="startToUse">Getting Started</span></a>
           </li>
           <li>
-            <a href="#api" class="toc-h1 toc-link" data-title="API接口加密验证">API接口加密验证</a>
+            <a href="#encrypted-verification-of-api" class="toc-h1 toc-link" data-title="Encrypted Verification of API"><span id="a1">Encrypted Verification of API</span></a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#api-key" class="toc-h2 toc-link" data-title="生成API Key">生成API Key</a>
+                    <a href="#generate-an-api-key" class="toc-h2 toc-link" data-title="Generate an API Key"><span id="a2">Generate an API Key</span></a>
                   </li>
                   <li>
-                    <a href="#9cea884c66" class="toc-h2 toc-link" data-title="发起请求"><span id="a3">发起请求</span></a>
+                    <a href="#initiate-a-request" class="toc-h2 toc-link" data-title="Initiate a Request"><span id="a3">Initiate a Request</span></a>
                   </li>
                   <li>
-                    <a href="#d2279731bb" class="toc-h2 toc-link" data-title="签名"><span id="a4">签名</span></a>
+                    <a href="#signature" class="toc-h2 toc-link" data-title="Signature"><span id="a4">Signature</span></a>
                   </li>
                   <li>
-                    <a href="#f9ce6006dc" class="toc-h2 toc-link" data-title="请求交互"><span id="a6">请求交互</span></a>
+                    <a href="#request-process" class="toc-h2 toc-link" data-title="Request Process"><span id="a6">Request Process</span></a>
                   </li>
                   <li>
-                    <a href="#04ca77abba" class="toc-h2 toc-link" data-title="标准规范"><span id="a9">标准规范</span></a>
+                    <a href="#standards-and-specification" class="toc-h2 toc-link" data-title="Standards and Specification"><span id="a9">Standards and Specification</span></a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#api-2" class="toc-h1 toc-link" data-title="业务API参考">业务API参考</a>
+            <a href="#api-reference" class="toc-h1 toc-link" data-title=" API Reference"><span id="b5"> API Reference</span></a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#open-api" class="toc-h2 toc-link" data-title="open-api"><span id="b6">open-api</span></a>
-                  </li>
-                  <li>
-                    <a href="#ws-api" class="toc-h2 toc-link" data-title="ws-api"><span id="b7">ws-api</span></a>
                   </li>
                   <li>
                     <a href="#open-api-demo-java" class="toc-h2 toc-link" data-title="open-api Demo（java） "><span id="open-api-java">open-api Demo（java） </span></a>
@@ -355,48 +352,48 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='45fa4e00db'>介绍</h1>
-<p>欢迎使用交易所开发者文档</p>
+        <h1 id='introduction'><span id="Introduction">Introduction</span></h1>
+<p>Welcome to <a href="https://www.Exchange.com/index">Exchange</a> API document for developers.</p>
 
-<p>本文档提供了相关API的使用方法介绍。open-api包含了资产余额，获取全部委托，获取全部成交记录等接口，ws-api则提供了K线相关功能接口。</p>
-<h1 id='60ff133549'>开始使用</h1>
-<p>REST，即Representational State Transfer的缩写，是一种流行的互联网传输架构。它具有结构清晰、符合标准、易于理解、扩展方便的，正得到越来越多网站的采用。其优点如下：</p>
+<p>This file provides the related API application introduction. Open-API includes the port to acquire balance, all orders ,and all transaction record. Ws-API response for the port of K line functions.</p>
+<h1 id='getting-started'><span id="startToUse">Getting Started</span></h1>
+<p>REST, a.k.a Respresntational State Transfer, is an architectural style that defines a set of constraints and properties based on HTTP. REST is known for its clear structure, readability, standardization and scalability. Its advantages are as follows:</p>
 
 <ul>
-<li>在RESTful架构中，每一个URL代表一种资源；</li>
-<li>客户端和服务器之间，传递这种资源的某种表现层；</li>
-<li>客户端通过四个HTTP指令，对服务器端资源进行操作，实现“表现层状态转化”。 </li>
+<li>Each URL represents one web resource in RESTful architecture.</li>
+<li>Acting as a representation of resources between client and server.</li>
+<li>Client is enabled to operate server-side resources with 4 HTTP requests - representational state transfer.</li>
 </ul>
 
-<p>建议开发者使用REST API进行币币交易或者资产提现等操作。</p>
-<h1 id='api'>API接口加密验证</h1><h2 id='api-key'>生成API Key</h2>
-<p>在对任何请求进行签名之前，您必须通过 [交易所]【用户中心】-【API】创建一个API key。 创建key后，您将获得3个必须记住的信息：</p>
+<p>Developers are recommended to use REST API to proceed spot trading and withdrawals.</p>
+<h1 id='encrypted-verification-of-api'><span id="a1">Encrypted Verification of API</span></h1><h2 id='generate-an-api-key'><span id="a2">Generate an API Key</span></h2>
+<p>Before signing any request, you must generate an API key via <a href="https://www.Exchange.com/index">Exchange’s official website </a>【User Center】-【API】. After generating the key, there are three things you must bear in mind:</p>
 
 <ul>
 <li><p>API Key</p></li>
 <li><p>Secret Key</p></li>
 </ul>
 
-<p>API Key 和 Secret Key将由随机生成和提供</p>
-<h2 id='9cea884c66'><span id="a3">发起请求</span></h2>
-<p>所有REST请求都必须包含以下标题：</p>
+<p>API Key and Secret are randomly generated and provided, Passphrase is set by user.</p>
+<h2 id='initiate-a-request'><span id="a3">Initiate a Request</span></h2>
+<p>All REST requests must include the following headings:</p>
 
 <ul>
-<li>ACCESS-KEY API KEY作为一个字符串。</li>
-<li>ACCESS-SIGN 使用base64编码签名（请参阅签名消息）。</li>
-<li>ACCESS-TIMESTAMP 作为您的请求的时间戳。</li>
+<li>ACCESS-KEY API Key as a string.</li>
+<li>ACCESS-SIGN uses base64-encoded signatures (see Signed Messages).</li>
+<li>ACCESS-TIMESTAMP is the timestamp of your request.header MUST be number of seconds since Unix Epoch in UTC. Decimal values are allowed.</li>
 </ul>
-<h2 id='d2279731bb'><span id="a4">签名</span></h2>
-<p>生成待签名的字符串
+<h2 id='signature'><span id="a4">Signature</span></h2>
+<p>Generate a string to be signed
     -   <a href="#open-api-java">open-api Demo</a></p>
 
-<p>1、先将参数以其参数名的字典序升序进行排序</p>
+<p>1、Sort the parameters in ascending order of their parameter names in lexicographic order</p>
 
-<p>2、遍历排序后的字典，将所有参数按&quot;keyvalue&quot;格式拼接在一起（非空参数）</p>
+<p>2、Traversing the sorted dictionary, splicing all parameters together in &quot;keyvalue&quot; format (non-null parameters)</p>
 
-<p>3、使用MD5对待签名串求签</p>
+<p>3、Use MD5 to treat signature strings</p>
 
-<p>例：</p>
+<p><strong>For example:</strong></p>
 
 <p>api_key = 1234567</p>
 
@@ -405,132 +402,132 @@
 <p>secret_key = 789654</p>
 
 <p>sign=md5(api_key1234567time12312312312137789654)</p>
-<h2 id='f9ce6006dc'><span id="a6">请求交互</span></h2>
-<p>REST访问的根URL：<code>https://openapi.wbf.live</code></p>
-<h3 id='e463496b53'><span id="a7">请求</span></h3>
-<p>所有请求基于Https协议，请求头信息中Content-Type 需要统一设置为:&#39;application/x-www-form-urlencoded’。</p>
+<h2 id='request-process'><span id="a6">Request Process</span></h2>
+<p>The root URL for REST access：<code>https://openapi.wbf.live</code></p>
+<h3 id='request'><span id="a7">Request</span></h3>
+<p>All requests are based on Https protocol, contentType in the request header must be uniformly set as: ‘application/x-www-form-urlencoded’.</p>
 
-<p><strong>请求交互说明</strong></p>
+<p><strong>Request Process Descriptions</strong></p>
 
-<p>1、请求参数：根据接口请求参数规定进行参数封装。</p>
+<p>1、Request parameter: parameter encapsulation based on the port request.</p>
 
-<p>2、提交请求参数：将封装好的请求参数通过POST/GET/DELETE等方式提交至服务器。</p>
+<p>2、Submitting request parameter: submit the encapsulated parameter request to the server via POST/GET/PUT/DELETE or other methods.</p>
 
-<p>3、服务器响应：服务器首先对用户请求数据进行参数安全校验，通过校验后根据业务逻辑将响应数据以JSON格式返回给用户。</p>
+<p>3、Server response: the server will first perform a security validation, then send back the requested data to the client in JSON format.</p>
 
-<p>4、数据处理：对服务器响应数据进行处理。</p>
+<p>4、Data processing: processing server response data.</p>
 
-<p><strong>成功</strong></p>
+<p><strong>Success</strong></p>
 
-<p>HTTP状态码200表示成功响应，并可能包含内容。如果响应含有内容，则将显示在相应的返回内容里面。</p>
+<p>HTTP status code 200 indicates a successful response and may contain content. If the response contains content, it will appear in the corresponding returned content.</p>
 
-<p><strong>常见错误码</strong></p>
+<p><strong>Common Error Code</strong></p>
 
 <ul>
-<li><p>400 Bad Request – Invalid request forma 请求格式无效</p></li>
-<li><p>401 Unauthorized – Invalid API Key 无效的API Key</p></li>
-<li><p>403 Forbidden – You do not have access to the requested resource 请求无权限</p></li>
-<li><p>404 Not Found 没有找到请求</p></li>
-<li><p>429 Too Many Requests 请求太频繁被系统限流</p></li>
-<li><p>500 Internal Server Error – We had a problem with our server 服务器内部错误</p></li>
+<li><p>400 Bad Request – Invalid request format</p></li>
+<li><p>401 Unauthorized – Invalid API Key</p></li>
+<li><p>403 Forbidden – You do not have access to the requested resource</p></li>
+<li><p>404 Not Found</p></li>
+<li><p>429 Too Many Requests</p></li>
+<li><p>500 Internal Server Error - We had a problem with our server</p></li>
 </ul>
 
-<p>如果失败，response body 带有错误描述信息, 对应的状态码描述如下：
-| 状态码 | 说明                             | 备注                       |
-| ------ | -------------------------------- | -------------------------- |
-| 0      | 成功                             | code=0 成功， code &gt;0 失败 |
-| 1      | 系统错误                         |                            |
-| 2      | 参数错误                         |                            |
-| 3      | 用户未登录                       |                            |
-| 4      | 余额不足                         |                            |
-| 5      | 下单失败                         |                            |
-| 6      | 数量小于最小值                   |                            |
-| 7      | 数量大于最大值                   |                            |
-| 8      | 订单取消失败                     |                            |
-| 9      | 交易被冻结                       |                            |
-| 11     | 短信验证码错误或过期             |                            |
-| 12     | 未知的代币代号                   |                            |
-| 14     | 验证码错误                       |                            |
-| 19     | 可用余额不足                     |                            |
-| 21     | 谷歌验证码错误或过期             |                            |
-| 22     | 订单不存在                       |                            |
-| 25     | 价格或数量精度超过最大限制       |                            |
-| 26     | 用户不存在                       |                            |
-| 28     | 邮箱验证码错误或过期             |                            |
-| 31     | 价格或者金额小于最小值           |                            |
-| 32     | 价格超出当日涨跌停范围，无法下单 |                            |
-| 33     | 订单委托量超出最大限制           |                            |
-| 34     | 下单超过频率限制                 |                            |
-| 10069  | 涨跌停限制币对,不允许下市价单    |                            |
-| 100100 | 用户名或密码错误                 |                            |
-| 100101 | 用户登陆锁定两小时               |                            |
-| 100102 | 用户被冻结                       |                            |
-| 101115 | 当前交易量超出用户单日交易上限   |                            |
-| 101117 | 当前币种不允许市价交易           |                            |
-| 101999 | 该币种未开启                     |                            |</p>
-<h3 id='594f3cdd9d'><span  id="a8">分页</span></h3>
-<p>部分返回数据集的REST请求支持使用游标分页。 游标分页允许在结果的当前页面之前和之后获取结果，并且非常适合于实时数据。根据当前的返回结果，后续请求可以在此基础之上指定请求数据的方向，可以请求在这之前和之后的数据。before和after游标可通过响应头CB_BEFORE和CB_AFTER使用。</p>
+<p>Upon the code in response body, below is the reference:
+code|    describe|   memo|
+|--------|--------|--------|
+|0|   success| code=0 success code &gt;0 failure|
+|1|  system internal error| |
+|2|  invalid parameter| |
+|3|  user need login| |
+|4|  insufficient| |
+|5|  place order failed| |
+|6|  volume below the minimum limitation| |
+|7|  volume above the maximum limitation| |
+|8|  order cancellation failure| |
+|9|  trading not allowed| |
+|11|  sms code invalid or expired| |
+|12|  unknown symbol| |
+|14|  invalid verification code| |
+|19|  insufficient balance| |
+|21|  google verification code invalid or expired |  |
+|22|  order not exist| |
+|25|  price or volume exceeds limitation| |
+|26|  user not exist| |
+|28|  e-mail verification code invalid or expired| |
+|31|  price or amount below the minimum limitation| |
+|32|  price above limit-up price| |
+|33|  volume above the maximum limitation| |
+|34|  exceed placing order frequency limitation| |
+|10069|  market order not allowed| |
+|100100|  invalid user or password| |
+|100101|  user locked for two hours| |
+|100102|  user account locked| |
+|101115|  user total trade volume exceeds the maximum volume limitation per day| |
+|101117|  market order not allowed| |
+|101999|  symbol is not open| |</p>
+<h3 id='pagination'><span  id="a8">Pagination</span></h3>
+<p>All REST requests that return datasets use cursor-based pagination.</p>
 
-<p><strong>例子</strong></p>
+<p>Cursor-based pagination allows results to be obtained before and after the current page of the result and is well suited for real-time data. The subsequent requests can specify the direction of the requested data based on the current returned results, before and/or after it. The before and after cursors can be used by the response headers CB-BEFORE and CB-AFTER.</p>
+
+<p><strong>For example:</strong></p>
 
 <p><code>GET /orders?before=2&amp;limit=30</code></p>
-<h2 id='04ca77abba'><span id="a9">标准规范</span></h2><h3 id='4baad3dffc'><span id="b1">时间戳</span></h3>
-<p>除非另外指定，API中的所有时间戳均以微秒为单位返回。</p>
+<h2 id='standards-and-specification'><span id="a9">Standards and Specification</span></h2><h3 id='timestamp'><span id="b1">Timestamp</span></h3>
+<p>Unless otherwise specified, all timestamps in APIs are returned in microseconds.</p>
 
-<p>请求签名中的ACCESS-TIMESTAMP的单位是秒，允许用小数表示更精确的时间。请求的时间戳必须在API服务时间的30秒内，否则请求将被视为过期并被拒绝。如果本地服务器时间和API服务器时间之间存在较大的偏差，那么我们建议您使用通过查询API服务器时间来更新http header。</p>
-<h3 id='59edbd491a'><span id="b2">例子</span></h3>
+<p>The ACCESS-TIMESTAMP header must be the number of seconds since UTC&#39;s time Unix Epoch. Decimal values are allowed. Your timestamp must be within 30 seconds of the API service time, otherwise your request will be considered expired and rejected. If you think there is a large time difference between your server and the API server, then we recommend that you use the time point to check the API server time.</p>
+<h3 id='for-example'><span id="b2">For example</span></h3>
 <p>1524801032573</p>
-<h3 id='8ae9853514'><span id="b3">数字</span></h3>
-<p>为了保持跨平台时精度的完整性，十进制数字作为字符串返回。建议您在发起请求时也将数字转换为字符串以避免截断和精度错误。</p>
-
-<p>整数（如交易编号和顺序）不加引号。</p>
-<h3 id='f267c470f1'><span id="b4">限流</span></h3>
-<p>如果请求过于频繁系统将自动限制请求，并在http header中返回429 too many requests状态码。</p>
+<h3 id='numbers'><span id="b3">Numbers</span></h3>
+<p>In order to maintain the accuracy of cross-platform, decimal numbers are returned as strings. We suggest that you might be better to convert the number to string when issuing the request to avoid truncation and precision errors. Integers (such as transaction number and sequence) do not need quotation marks.</p>
+<h3 id='rate-limits'><span id="b4">Rate Limits</span></h3>
+<p>When a rate limit is exceeded, a status of 429 Too Many Requests will be returned.</p>
 
 <p>REST API</p>
 
 <ul>
-<li><p>公共接口：我们通过IP限制公共接口的调用：每2秒最多6个请求。</p></li>
-<li><p>私人接口：我们通过用户ID限制私人接口的调用：每秒最多10个请求。</p></li>
-<li><p>某些接口的特殊限制在具体的接口上注明</p></li>
+<li><p>Public interface: We limit the invocation of public interface via IP: up to 6 requests every 2s.</p></li>
+<li><p>Private interface: We limit the invocation of private interface via user ID: up to 6 requests every 2s.</p></li>
+<li><p>Special restrictions on specified interfaces are specified.</p></li>
 </ul>
-<h1 id='api-2'>业务API参考</h1><h2 id='open-api'><span id="b6">open-api</span></h2><h3 id='7c2f2901d7'><span id="1">资产余额</span></h3>
+<h1 id='api-reference'><span id="b5"> API Reference</span></h1><h2 id='open-api'><span id="b6">open-api</span></h2><h3 id='balance-of-assets'><span id="1">Balance of assets</span></h3>
 <ol>
-<li>接口地址: /open/api/user/account</li>
-<li>接口说明: (get请求)资产余额</li>
+<li>Interface address: /open/api/user/account</li>
+<li>Interface specification: (get request)Balance of the assets</li>
 </ol>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -541,81 +538,83 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
 <td>{<br>&quot;total_asset&quot;:432323.23,<br>&quot;coin_list&quot;:[<br>{&quot;coin&quot;:&quot;btc&quot;,&quot;normal&quot;:32323.233,&quot;locked&quot;:32323.233,&quot;btcValuatin&quot;:112.33},<br>{&quot;coin&quot;:&quot;ltc&quot;,&quot;normal&quot;:32323.233,&quot;locked&quot;:32323.233,&quot;btcValuatin&quot;:112.33},<br>{&quot;coin&quot;:&quot;bch&quot;,&quot;normal&quot;:32323.233,&quot;locked&quot;:32323.233,&quot;btcValuatin&quot;:112.33},<br>]<br>}<br></td>
-<td>total_asset:总资产<br>normal:余额账户<br>locked：冻结账户<br>btcValuatin：BTC估值</td>
+<td>total_asset:total assets<br>normal:Balance account<br>locked：Frozen accounts<br>btcValuatin：BTCValuation</td>
 </tr>
 </tbody></table>
-<h3 id='d2d71942b1'><span id="2">获取全部委托</span></h3>
+<h3 id='acquire-full-delegation'><span id="2">Acquire full delegation</span></h3>
 <ol>
-<li>接口地址:/open/api/v2/all_order</li>
-<li>接口说明:(get请求)获取全部委托</li>
+<li>Interface address:/open/api/v2/all_order</li>
+<li>Interface specification:(getrequest)Acquire full delegation</li>
 </ol>
 
 <ul>
-<li><p>旧接口 /open/api/all_order 仍保留,但已经不建议使用</p></li>
-<li><p>v2版本变化: 去掉了结果返回值中的tradeList成交记录,提升效率;如果需要单一订单的成交信息,可以使用 /open/api/order_info 接口单独去查</p></li>
+<li><p>Old interface/open/api/all_order It is still reserved, but not recommended</p></li>
+<li><p>v2Version change: Remove from the result return value tradeListTransaction record,Enhance efficiency;If transaction information for a single order is required</p></li>
 </ul>
+
+<p>,you can use /open/api/order_info interface and check it</p>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，btcusdt，详情看下面</td>
+<td>Must fill</td>
+<td>Market mark，btcusdt，See below for details</td>
 </tr>
 <tr>
 <td>startDate</td>
-<td>选填</td>
-<td>（新增）开始时间，精确到秒“yyyy-MM-dd mm:hh:ss”</td>
+<td>Selective filling</td>
+<td>（Added) Start time, accurate to seconds“yyyy-MM-dd mm:hh:ss”</td>
 </tr>
 <tr>
 <td>endDate</td>
-<td>选填</td>
-<td>（新增）结束时间，精确到秒“yyyy-MM-dd mm:hh:ss”</td>
+<td>Selective filling</td>
+<td>（Added) End time, accurate to seconds“yyyy-MM-dd mm:hh:ss”</td>
 </tr>
 <tr>
 <td>pageSize</td>
-<td>选填</td>
-<td>页面大小</td>
+<td>Selective filling</td>
+<td>Page size</td>
 </tr>
 <tr>
 <td>page</td>
-<td>选填</td>
-<td>页码</td>
+<td>Selective filling</td>
+<td>Page number</td>
 </tr>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -626,11 +625,11 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下:</td>
+<td>as follows:</td>
 <td></td>
 </tr>
 </tbody></table>
@@ -645,11 +644,11 @@
             "countCoin":"btc",
             "source":1,
             "type":1,
-            "side_msg":"买入",
+            "side_msg":"Purchase",
             "volume":"1.000",
             "price":"0.10000000",
             "source_msg":"WEB",
-            "status_msg":"完全成交",
+            "status_msg":"Full deal",
             "deal_volume":"1.00000000",
             "id":424,
             "remain_volume":"0.00000000",
@@ -664,11 +663,11 @@
             "countCoin":"btc",
             "source":1,
             "type":1,
-            "side_msg":"卖出",
+            "side_msg":"Sell out",
             "volume":"1.000",
             "price":"0.09900000",
             "source_msg":"WEB",
-            "status_msg":"完全成交",
+            "status_msg":"Full deal",
             "deal_volume":"1.00000000",
             "id":423,
             "remain_volume":"0.00000000",
@@ -680,7 +679,7 @@
 </code></pre></div>
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny</th>
 <th>xxx-btc</th>
 <th>xxx-usdt</th>
@@ -723,73 +722,73 @@
 <td>-</td>
 </tr>
 </tbody></table>
-<h3 id='604667704d'><span id="3">获取全部成交记录</span></h3>
+<h3 id='obtain-all-transaction-records'><span id="3">Obtain all transaction records</span></h3>
 <ol>
-<li>接口地址:/open/api/all_trade</li>
-<li>接口说明:(get请求)获取全部成交记录</li>
+<li>Interface address:/open/api/all_trade</li>
+<li>Interface Description: (get request) Get all transaction records</li>
 </ol>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，btcusdt，详情看下面</td>
+<td>Must fill</td>
+<td>Market mark，btcusdt，See below for details</td>
 </tr>
 <tr>
 <td>startDate</td>
-<td>选填</td>
-<td>（新增）开始时间，精确到秒“yyyy-MM-dd HH:mm:ss”</td>
+<td>Selective filling</td>
+<td>(Added) Start time, accurate to seconds“yyyy-MM-dd HH:mm:ss”</td>
 </tr>
 <tr>
 <td>endDate</td>
-<td>选填</td>
-<td>（新增）结束时间，精确到秒“yyyy-MM-dd HH:mm:ss”</td>
+<td>Selective filling</td>
+<td>(Added) End time, accurate to seconds“yyyy-MM-dd HH:mm:ss”</td>
 </tr>
 <tr>
 <td>pageSize</td>
-<td>选填</td>
-<td>页面大小</td>
+<td>Selective filling</td>
+<td>Page size</td>
 </tr>
 <tr>
 <td>page</td>
-<td>选填</td>
-<td>页码</td>
+<td>Selective filling</td>
+<td>Page number</td>
 </tr>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sort</td>
-<td>选填</td>
-<td>1表示倒序</td>
+<td>Selective filling</td>
+<td>1Representing reverse order</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -800,11 +799,11 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下:</td>
+<td>as follows:</td>
 <td></td>
 </tr>
 </tbody></table>
@@ -820,7 +819,7 @@
             "ctime":1510996571195,
             "deal_price":"0.10000000",
             "id":306,
-            "type":"买入",
+            "type":"Purchase",
             "bid_id":1001,
             "ask_id":1002,
             "bid_user_id":10001,
@@ -836,7 +835,7 @@
             "ctime":1510996571190,
             "deal_price":"0.08500000",
             "id":305,
-            "type":"买入",
+            "type":"Purchase",
             "bid_id":1001,
             "ask_id":1002,
             "bid_user_id":10001,
@@ -851,7 +850,7 @@
             "ctime":1510995560344,
             "deal_price":"0.00100000",
             "id":291,
-            "type":"买入",
+            "type":"Purchase",
             "bid_id":1001,
             "ask_id":1002,
             "bid_user_id":10001,
@@ -862,7 +861,7 @@
 </code></pre></div>
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny</th>
 <th>xxx-btc</th>
 <th>xxx-usdt</th>
@@ -905,53 +904,53 @@
 <td>-</td>
 </tr>
 </tbody></table>
-<h3 id='debd6c0464'><span id="4">取消委托单</span></h3>
+<h3 id='cancellation-of-the-order'><span id="4">Cancellation of the order</span></h3>
 <ol>
-<li>接口地址:/open/api/cancel_order</li>
-<li>接口说明:(post请求)取消委托单</li>
+<li>Interface address:/open/api/cancel_order</li>
+<li>Interface specification:(post Request) Cancellation of the Power of Attorney</li>
 </ol>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>order_id</td>
-<td>必填</td>
-<td>订单ID</td>
+<td>Must fill</td>
+<td>OrderID</td>
 </tr>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，ethbtc，详情看下面</td>
+<td>Must fill</td>
+<td>Market mark，ethbtc，See below for details</td>
 </tr>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -962,7 +961,7 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
@@ -973,7 +972,7 @@
 
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny（xxx101）</th>
 <th>xxx-btc（xxx201）</th>
 </tr>
@@ -1004,48 +1003,48 @@
 <td>etcbtc</td>
 </tr>
 </tbody></table>
-<h3 id='a38725e807'><span id="5">根据币对取消全部委托单</span></h3>
+<h3 id='cancellation-of-all-orders-of-attorney-according-to-currency-pair'><span id="5">Cancellation of all orders of attorney according to currency pair</span></h3>
 <ol>
-<li>接口地址:/open/api/cancel_order_all</li>
-<li>接口说明:(post请求)根据币对取消全部委托单（最多取消两千条，多余两千请循环撤销）</li>
+<li>Interface address:/open/api/cancel_order_all</li>
+<li>Interface specification:(postrequest)Cancellation of all orders of attorney according to currency pair（Up to 2,000 cancellations, more than 2,000 please revoke）</li>
 </ol>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，ethbtc，详情看下面</td>
+<td>Must fill</td>
+<td>Market mark，ethbtc，See below for details</td>
 </tr>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1056,7 +1055,7 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
@@ -1067,7 +1066,7 @@
 
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny（xxx101）</th>
 <th>xxx-btc（xxx201）</th>
 </tr>
@@ -1098,73 +1097,73 @@
 <td>etcbtc</td>
 </tr>
 </tbody></table>
-<h3 id='df83685cc8'><span id="6">创建订单</span></h3>
+<h3 id='create-order'><span id="6">Create order</span></h3>
 <ol>
-<li>接口地址:/open/api/create_order</li>
-<li>接口说明:(post请求)创建订单</li>
+<li>Interface address:/open/api/create_order</li>
+<li>Interface specification:(post Request) Create an order</li>
 </ol>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>side</td>
-<td>必填</td>
-<td>买卖方向BUY、SELL</td>
+<td>Must fill</td>
+<td>Direction of businessBUY、SELL</td>
 </tr>
 <tr>
 <td>type</td>
-<td>必填</td>
-<td>挂单类型，1:限价委托、2:市价委托</td>
+<td>Must fill</td>
+<td>Type of list，1:limit order、2:market order</td>
 </tr>
 <tr>
 <td>volume</td>
-<td>必填</td>
-<td>购买数量（多义，复用字段）<br>type=1:表示买卖数量<br>type=2:买则表示总价格，卖表示总个数<br>买卖限制user/me-用户信息</td>
+<td>Must fill</td>
+<td>Purchase quantity（Polysemy, multiplexing fields）<br>type=1:Represents the quantity of sales and purchases<br>type=2:Buy means the total price，Selling represents the total number<br>Trading restrictions user/me-User information</td>
 </tr>
 <tr>
 <td>price</td>
-<td>选填</td>
-<td>委托单价：type=2：不需要此参数</td>
+<td>Selective filling</td>
+<td>Authorized unit price：type=2：No need for this parameter</td>
 </tr>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，ethbtc</td>
+<td>Must fill</td>
+<td>Market mark，ethbtc</td>
 </tr>
 <tr>
 <td>fee_is_user_exchange_coin</td>
-<td>选填</td>
-<td>（冗余字段，忽略）0，当交易所有平台币时，此参数表示是否使用用平台币支付手续费，0否，1是</td>
+<td>Selective filling</td>
+<td>（Redundant fields, ignored）0，When the exchange has the platform currency, this parameter indicates whether to use the platform currency to pay the handling fee, 0 no, 1 yes.</td>
 </tr>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1175,18 +1174,18 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
 <td>{&quot;order_id&quot;:34343}</td>
-<td>成功返回交易ID</td>
+<td>Successful return to the transactionID</td>
 </tr>
 </tbody></table>
 
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny（xxx101）</th>
 <th>xxx-btc（xxx201）</th>
 </tr>
@@ -1217,22 +1216,22 @@
 <td>etcbtc</td>
 </tr>
 </tbody></table>
-<h3 id='4c9de00a78'><span id="7">获取所有交易对行情</span></h3>
+<h3 id='get-all-trading-pairs-quotations-on-the-market'><span id="7">Get all trading pairs quotations on the market</span></h3>
 <ol>
-<li>接口地址:/open/api/get_allticker</li>
-<li>接口说明:(get请求)获取所有交易对行情</li>
+<li>Interface address:/open/api/get_allticker</li>
+<li>Interface specification:(get Request) Get all trading pairs quotations on the market </li>
 </ol>
 
 <ul>
-<li>该接口不进行签名校验</li>
-<li>参数:无</li>
+<li>This interface does not perform signature verification</li>
+<li>Parameter: None</li>
 </ul>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1243,12 +1242,12 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下：</td>
-<td>返回值说明<br>date: 返回数据时服务器时间 <br>symbol: 交易对（交易对1(base)简称_交易对2(quote)简称） <br>buy: 买一价 <br>high: 最高价 <br>last: 最新成交价 <br>low: 最低价 <br>sell: 卖一价 <br>vol: 成交量(最近的24小时)<br>rose:涨跌幅</td>
+<td>as follows：</td>
+<td>Return Value Description<br>date: Server time when data is returned <br>symbol: Transaction pairs（Transaction pairs1(base)Abbreviation_Transaction pairs2(quote)Abbreviation） <br>buy: Buy one price <br>high: Highest price <br>last: Latest Transaction Price <br>low: Minimum price <br>sell: Selling price <br>vol: Volume (latest 24 hours)<br>rose:Ups and downs</td>
 </tr>
 </tbody></table>
 <div class="highlight"><pre class="highlight plaintext"><code>{
@@ -1309,38 +1308,38 @@
      }
    ]
  }
-</code></pre></div><h3 id='k'><span id="8">获取K线数据</span></h3>
+</code></pre></div><h3 id='getting-k-line-data'><span id="8">Getting K-line data</span></h3>
 <ol>
-<li>接口地址:/open/api/get_records</li>
-<li>接口说明:(get请求)获取K线数据</li>
+<li>Interface address:/open/api/get_records</li>
+<li>Interface specification:(get request)Getting K-line data</li>
 </ol>
 
 <ul>
-<li>该接口不进行签名校验</li>
+<li>This interface does not perform signature verification</li>
 </ul>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，bchbtc，详情看下面</td>
+<td>Must fill</td>
+<td>Market mark，bchbtc，See below for details</td>
 </tr>
 <tr>
 <td>period</td>
-<td>必填</td>
-<td>单位为分钟，比喻1分钟则为1，一天则为1440</td>
+<td>Must fill</td>
+<td>In minutes，The analogy is 1 in a minute，One day is1440</td>
 </tr>
 </tbody></table>
 
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny</th>
 <th>xxx-btc</th>
 <th>xxx-usdt</th>
@@ -1378,13 +1377,13 @@
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1395,22 +1394,23 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下：</td>
+<td>as follows：</td>
 <td></td>
 </tr>
 </tbody></table>
 <div class="highlight"><pre class="highlight plaintext"><code>[
         [
-            1514445780,  //时间戳
-            1.12,        //开盘价
-            1.12,        //最高
-            1.12,        //最低
-            1.12,        //收盘价
-            0            //成交量
+            1514445780,  //time stamp
+            1.12,        //Opening price
+            1.12,        //Highest
+            1.12,        //minimum
+            1.12,        //Closing price
+            0            //volume
+
         ],
         [
             1514445840,
@@ -1429,37 +1429,37 @@
             0
         ]
 ]
-</code></pre></div><h3 id='32d30f799b'><span id="9">获取当前行情</span></h3>
+</code></pre></div><h3 id='get-the-current-market-quotations'><span id="9">Get the current market quotations</span></h3>
 <ol>
-<li>接口地址:/open/api/get_ticker</li>
-<li>接口说明:(get请求)获取当前行情</li>
+<li>Interface address:/open/api/get_ticker</li>
+<li>Interface specification:(get Request) to get the current market quotations </li>
 </ol>
 
 <ul>
-<li>该接口不进行签名校验</li>
+<li>This interface does not perform signature verification</li>
 </ul>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，btcusdt，详情看下面</td>
+<td>Must fill</td>
+<td>Market mark，btcusdt，See below for details</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1470,28 +1470,28 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下：</td>
+<td>as follows：</td>
 <td></td>
 </tr>
 </tbody></table>
 <div class="highlight"><pre class="highlight plaintext"><code>{
-    "high": 1,//最高值
-    "vol": 10232.26315789,//交易量
-    "last": 173.60263169,//最新成交价
-    "low": 0.01,//最低值
-    "buy": "0.01000000",//买一价
-    "sell": "1.12345680",//卖一价
-    "rose": -0.44564773,//涨跌幅
+    "high": 1,//Maximum value
+    "vol": 10232.26315789,//Trading volume
+    "last": 173.60263169,//Latest Transaction Price
+    "low": 0.01,//Minimum value
+    "buy": "0.01000000",//Buy one price
+    "sell": "1.12345680",//Selling price
+    "rose": -0.44564773,//Ups and downs
     "time": 1514448473626
 }
 </code></pre></div>
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny</th>
 <th>xxx-btc</th>
 <th>xxx-usdt</th>
@@ -1528,37 +1528,37 @@
 <td>ltcusdt</td>
 </tr>
 </tbody></table>
-<h3 id='d260ccba65'><span id="10">获取行情成交记录</span></h3>
+<h3 id='acquisition-of-trading-records'><span id="10">Acquisition of Trading Records</span></h3>
 <ol>
-<li>接口地址:/open/api/get_trades</li>
-<li>接口说明:(get请求)获取行情成交记录</li>
+<li>Interface address:/open/api/get_trades</li>
+<li>Interface specification:(get Request) to obtain market transaction records</li>
 </ol>
 
 <ul>
-<li>该接口不进行签名校验</li>
+<li>This interface does not perform signature verification</li>
 </ul>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，bchbtc，详情看下面</td>
+<td>Must fill</td>
+<td>Market mark，bchbtc，See below for details</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1569,20 +1569,20 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下：</td>
+<td>as follows：</td>
 <td></td>
 </tr>
 </tbody></table>
 <div class="highlight"><pre class="highlight plaintext"><code>[
         {
-            "amount": 0.55,//成交量
-            "price": 0.18519949,//成交价
+            "amount": 0.55,//volume
+            "price": 0.18519949,//Transaction price
             "id": 447121,
-            "type": "buy"//买卖type，买为buy，买sell
+            "type": "buy"//Businesstype，Buy asbuy，buysell
         },
         {
             "amount": 16.45,
@@ -1606,7 +1606,7 @@
 </code></pre></div>
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny</th>
 <th>xxx-btc</th>
 <th>xxx-usdt</th>
@@ -1643,43 +1643,43 @@
 <td>ltcusdt</td>
 </tr>
 </tbody></table>
-<h3 id='e592a0b8d9'><span id="11">获取各个币对的最新成交价</span></h3>
+<h3 id='get-the-latest-transaction-price-of-each-pair-of-currencies'><span id="11">Get the latest transaction price of each pair of currencies</span></h3>
 <ol>
-<li>接口地址:/open/api/market</li>
-<li>接口说明:(get请求)获取各个币对的最新成交价</li>
+<li>Interface address:/open/api/market</li>
+<li>Interface specification:(getRequest) Get the latest transaction price of each pair of currencies</li>
 </ol>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1690,7 +1690,7 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
@@ -1701,7 +1701,7 @@
 
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny</th>
 <th>xxx-btc</th>
 <th>xxx-usdt</th>
@@ -1738,42 +1738,42 @@
 <td>etcusdt</td>
 </tr>
 </tbody></table>
-<h3 id='b9fa6c9f9f'><span id="12">查询买卖盘深度</span></h3>
+<h3 id='search-the-depth-of-buying-and-selling'><span id="12">Search the depth of buying and selling</span></h3>
 <ol>
-<li>接口地址:/open/api/market_dept</li>
-<li>接口说明:(get请求)查询买卖盘深度</li>
+<li>Interface address:/open/api/market_dept</li>
+<li>Interface specification:(getrequest)Search the depth of buying and selling</li>
 </ol>
 
 <ul>
-<li>该接口不进行签名校验</li>
+<li>This interface does not perform signature verification</li>
 </ul>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，ethbtc，详情看下面</td>
+<td>Must fill</td>
+<td>Market mark，ethbtc，See below for details</td>
 </tr>
 <tr>
 <td>type</td>
-<td>必填</td>
-<td>深度类型，step0, step1, step2（合并深度0-2）；step0时，精度最高</td>
+<td>Must fill</td>
+<td>Depth type，step0, step1, step2（Merger depth0-2）；step0time，The highest accuracy</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1784,24 +1784,24 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下：</td>
+<td>as follows：</td>
 <td></td>
 </tr>
 </tbody></table>
 <div class="highlight"><pre class="highlight plaintext"><code>{  
     "tick":{
-        "asks":[//卖盘
+        "asks":[//Selling
             {22112.22,0.9332},
             {22112.21,0.2},
             {22112.21,0.2},
             {22112.21,0.2},
             {22112.21,0.2},
         ],
-        "bids":[//买盘
+        "bids":[//Bid
             {22111.22,0.9332},
             {22111.21,0.2},
             {22112.21,0.2},
@@ -1810,63 +1810,63 @@
         ]
     }
 }
-</code></pre></div><h3 id='edfe9158e5'><span id="13">批量下单，同时批量撤回指定订单</span></h3>
+</code></pre></div><h3 id='batch-order-simultaneous-bulk-withdrawal-of-designated-orders'><span id="13">Batch order，Simultaneous bulk withdrawal of designated orders</span></h3>
 <ol>
-<li>接口地址:/open/api/mass_replace</li>
-<li>接口说明:(post请求)批量下单，同时批量撤回指定订单</li>
+<li>Interface address:/open/api/mass_replace</li>
+<li>Interface specification:(postrequest)Place orders in batches and withdraw designated orders in batches</li>
 </ol>
 
 <ul>
-<li>mass_place是需要发送到系统的一批限价订单，每次最多100条</li>
-<li>mass_cancel是需要撤回的一批订单,每次最多100条</li>
+<li>mass_placeIt&#39;s a batch of limited price orders that need to be sent to the system, up to 100 at a time</li>
+<li>mass_cancelIt&#39;s a batch of orders that need to be withdrawn, up to 100 at a time</li>
 </ul>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>币种 ，例 btcusdt</td>
+<td>Must fill</td>
+<td>currency ，example btcusdt</td>
 </tr>
 <tr>
 <td>mass_cancel</td>
-<td>选填</td>
-<td>[1234,234....] 撤单参数，订单id</td>
+<td>Selective filling</td>
+<td>[1234,234....] Withdrawal parameters，Orderid</td>
 </tr>
 <tr>
 <td>mass_place</td>
-<td>选填</td>
-<td>[{side:&quot;BUY&quot;,type:&quot;1&quot;,volume:&quot;0.01&quot;,price:&quot;6400&quot;,fee_is_user_exchange_coin:&quot;0&quot;}, {}, …]<br>含义：<br>symbol:币种，例btcusdt<br>mass_place:下单参数。side：方向（买卖方向BUY、SELL），<br>--------------------------------type：类型（1:限价委托、2:市价委托）<br>--------------------------------volume：购买数量（多义，复用字段） type=1:表示买卖数量type=2:买则表示总价格，卖表示总个数<br>--------------------------------price：委托单价：type=2：不需要此参数<br>--------------------------------fee_is_user_exchange_coin：(冗余字段)当交易所有平台币时，此参数表示是否使用用平台币支付手续费，0否，1是</td>
+<td>Selective filling</td>
+<td>[{side:&quot;BUY&quot;,type:&quot;1&quot;,volume:&quot;0.01&quot;,price:&quot;6400&quot;,fee_is_user_exchange_coin:&quot;0&quot;}, {}, …]<br>Meaning：<br>symbol:currency，example btcusdt<br>mass_place:Order parameter。side：direction（Direction of businessBUY、SELL），<br>--------------------------------type：type（1:limit order、2:market order）<br>--------------------------------volume：Purchase quantity（Polysemy，Multiplex field） type=1:Represents the quantity of sales and purchasestype=2:Buy means the total price，Selling represents the total number<br>--------------------------------price：Authorized unit price：type=2：No need for this parameter<br>--------------------------------fee_is_user_exchange_coin：(Redundant fields) When the exchange has a platform currency，This parameter indicates whether to use platform currency to pay handling fee, 0 no, 1 yes.</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1877,71 +1877,71 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
 <td>&quot;mass_place&quot;: [{&quot;order_id&quot;:&quot;1234&quot;,&quot;code&quot;:&quot;0&quot;, &quot;msg&quot;:&quot;suc&quot;}，...]<br>&quot;mass_cancel&quot;: [{&quot;order_id&quot;:&quot;1234&quot;,&quot;code&quot;:&quot;0&quot;, &quot;msg&quot;:&quot;suc&quot;}，.......]</td>
-<td>下单返回：订单id，状态码，成功或失败信息。<br>撤单返回：订单id，状态码，成功或失败信息<br>0表示成功。</td>
+<td>Order return：Orderid，Status code，Success or Failure Information。<br>Withdrawal of returns：Orderid，Status code，c<br>0Express success。</td>
 </tr>
 </tbody></table>
-<h3 id='v2'><span id="27">批量下单，同时批量撤回指定订单-V2</span></h3>
+<h3 id='place-orders-in-batches-and-withdraw-designated-orders-in-batches-v2'><span id="27">Place orders in batches and withdraw designated orders in batches - V2</span></h3>
 <ol>
-<li>接口地址:/open/api/mass_replaceV2</li>
-<li>接口说明:(post请求)批量下单，同时批量撤回指定订单</li>
+<li>Interface address:/open/api/mass_replaceV2</li>
+<li>Interface specification:(postrequest)Place orders in batches and withdraw designated orders in batches</li>
 </ol>
 
 <ul>
-<li><p>mass_place是需要发送到系统的一批限价订单，每次最多1000条</p></li>
-<li><p>mass_cancel是需要撤回的一批订单,每次最多1000条</p></li>
+<li>mass_placeIt&#39;s a batch of limited price orders that need to be sent to the system, up to 1000 at a time</li>
+<li>mass_cancelIt&#39;s a batch of orders that need to be withdrawn, up to 1000 at a time</li>
 </ul>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>币种 ，例 btcusdt</td>
+<td>Must fill</td>
+<td>currency ，example btcusdt</td>
 </tr>
 <tr>
 <td>mass_cancel</td>
-<td>选填</td>
-<td>[1234,234....] 撤单参数，订单id</td>
+<td>Selective filling</td>
+<td>[1234,234....] Withdrawal parameters，Orderid</td>
 </tr>
 <tr>
 <td>mass_place</td>
-<td>选填</td>
-<td>[{side:&quot;BUY&quot;,type:&quot;1&quot;,volume:&quot;0.01&quot;,price:&quot;6400&quot;,fee_is_user_exchange_coin:&quot;0&quot;}, {}, …]<br>含义：<br>symbol:币种，例btcusdt<br>mass_place:下单参数--&gt;side：方向（买卖方向BUY、SELL），<br>--------------------------------type：类型（1:限价委托、2:市价委托）<br>--------------------------------volume：购买数量（多义，复用字段） type=1:表示买卖数量type=2:买则表示总价格，卖表示总个数<br>--------------------------------price：委托单价：type=2：不需要此参数<br>--------------------------------fee_is_user_exchange_coin：(冗余字段)当交易所有平台币时，此参数表示是否使用用平台币支付手续费，0否，1是</td>
+<td>Selective filling</td>
+<td>[{side:&quot;BUY&quot;,type:&quot;1&quot;,volume:&quot;0.01&quot;,price:&quot;6400&quot;,fee_is_user_exchange_coin:&quot;0&quot;}, {}, …]<br>Meaning：<br>symbol:currency，example btcusdt<br>mass_place:Order parameter。side：direction（Direction of businessBUY、SELL），<br>--------------------------------type：type（1:limit order、2:market order）<br>--------------------------------volume：Purchase quantity（Polysemy，Multiplex field） type=1:Represents the quantity of sales and purchasestype=2:Buy means the total price，Selling represents the total number<br>--------------------------------price：Authorized unit price：type=2：No need for this parameter<br>--------------------------------fee_is_user_exchange_coin：(Redundant fields) When the exchange has a platform currency，This parameter indicates whether to use platform currency to pay handling fee, 0 no, 1 yes.</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1952,71 +1952,71 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
 <td>&quot;mass_place&quot;: [{&quot;msg&quot;: &quot;Success&quot;,&quot;code&quot;: &quot;0&quot;,&quot;order_id&quot;: [504,505]},{&quot;msg&quot;: &quot;Order cancellation failed&quot;,&quot;code&quot;: &quot;8&quot;,&quot;order_id&quot;: [504,505]}]<br>&quot;mass_cancel&quot;: [{&quot;msg&quot;: &quot;Success&quot;,&quot;code&quot;: &quot;0&quot;,&quot;order_id&quot;: [572,573,574,626,629]}]</td>
-<td>下单返回：订单id，状态码，成功或失败信息。<br>撤单返回：订单id，状态码，成功或失败信息<br>0表示成功。</td>
+<td>Order return：Orderid，Status code，Success or Failure Information。<br>Withdrawal of returns：Orderid，Status code，c<br>0Express success。</td>
 </tr>
 </tbody></table>
-<h3 id='3ae25b0ae0'><span id="14">获取当前委托</span></h3>
+<h3 id='get-the-current-delegation'><span id="14">Get the current delegation</span></h3>
 <ol>
-<li>接口地址:/open/api/v2/new_order</li>
-<li>接口说明:(get请求)获取当前委托（包括未成交和正在成交的委托）</li>
+<li>Interface address:/open/api/v2/new_order</li>
+<li>Interface specification:(getrequest)Get the current delegation（Including uncompleted and ongoing commissions）</li>
 </ol>
 
 <ul>
-<li><p>旧接口 /open/api/new_order 仍保留,但已经不建议使用</p></li>
-<li><p>v2版本变化: 去掉了结果返回值中的tradeList成交记录,提升效率;如果需要单一订单的成交信息,可以使用 /open/api/order_info 接口单独去查</p></li>
+<li><p>Old interface /open/api/new_order It is still reserved, but not recommended</p></li>
+<li><p>v2Version change: Remove the tradeList transaction record from the result return value to improve efficiency;If you need transaction information for a single order, you can use /open/api/order_info interface and check it</p></li>
 </ul>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>symbo</td>
-<td>l    必填</td>
-<td>市场标记，btcusdt，详情看下面</td>
+<td>l    Must fill</td>
+<td>Market mark，btcusdt，See below for details</td>
 </tr>
 <tr>
 <td>pageSize</td>
-<td>选填</td>
-<td>页面大小</td>
+<td>Selective filling</td>
+<td>Page size</td>
 </tr>
 <tr>
 <td>page</td>
-<td>选填</td>
-<td>页码</td>
+<td>Selective filling</td>
+<td>Page number</td>
 </tr>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -2027,12 +2027,12 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下:</td>
-<td>订单状态(status)说明：<br>INIT(0,&quot;初始订单，未成交未进入盘口&quot;),<br>NEW_(1,&quot;新订单，未成交进入盘口&quot;),<br>FILLED(2,&quot;完全成交&quot;),<br>PART_FILLED(3,&quot;部分成交&quot;),<br>CANCELED(4,&quot;已撤单&quot;),<br>PENDING_CANCEL(5,&quot;待撤单&quot;),<br>EXPIRED(6,&quot;异常订单&quot;);</td>
+<td>as follows:</td>
+<td>Order status(status)Explain：<br>INIT(0,&quot;Initial order，No deal has not entered the handicap&quot;),<br>NEW_(1,&quot;New order，Unfinished business enters the market&quot;),<br>FILLED(2,&quot;Full deal&quot;),<br>PART_FILLED(3,&quot;Partial transaction&quot;),<br>CANCELED(4,&quot;Withdrawal of documents&quot;),<br>PENDING_CANCEL(5,&quot;Withdrawal of order&quot;),<br>EXPIRED(6,&quot;Abnormal order&quot;);</td>
 </tr>
 </tbody></table>
 <div class="highlight"><pre class="highlight plaintext"><code>{
@@ -2046,11 +2046,11 @@
             "countCoin":"btc",
             "source":1,
             "type":1,
-            "side_msg":"买入",
+            "side_msg":"Purchase",
             "volume":"1.000",
             "price":"0.10000000",
             "source_msg":"WEB",
-            "status_msg":"完全成交",
+            "status_msg":"Full deal",
             "deal_volume":"1.00000000",
             "id":424,
             "remain_volume":"0.00000000",
@@ -2065,11 +2065,11 @@
             "countCoin":"btc",
             "source":1,
             "type":1,
-            "side_msg":"卖出",
+            "side_msg":"Sell out",
             "volume":"1.000",
             "price":"0.09900000",
             "source_msg":"WEB",
-            "status_msg":"完全成交",
+            "status_msg":"Full deal",
             "deal_volume":"1.00000000",
             "id":423,
             "remain_volume":"0.00000000",
@@ -2081,7 +2081,7 @@
 </code></pre></div>
 <table><thead>
 <tr>
-<th>虚拟币编号</th>
+<th>Virtual Currency Number</th>
 <th>xxx-cny</th>
 <th>xxx-btc</th>
 <th>xxx-usdt</th>
@@ -2121,56 +2121,56 @@
 <td>usdt</td>
 <td>usdtcny</td>
 <td>-</td>
-<td>-/web/new_order-获取当前委托</td>
+<td>-/web/new_order-Get the current delegate</td>
 </tr>
 </tbody></table>
-<h3 id='5e1d8c8f3b'><span id="15">获取订单详情</span></h3>
+<h3 id='obtain-order-details'><span id="15">Obtain order details</span></h3>
 <ol>
-<li>接口地址:/open/api/order_info</li>
-<li>接口说明:(get请求)获取订单详情</li>
+<li>Interface address:/open/api/order_info</li>
+<li>Interface specification:(getrequest)Obtain order details</li>
 </ol>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>order_id</td>
-<td>必填</td>
-<td>订单ID</td>
+<td>Must fill</td>
+<td>Order ID</td>
 </tr>
 <tr>
 <td>symbol</td>
-<td>必填</td>
-<td>市场标记，ethbtc，详情看下面</td>
+<td>Must fill</td>
+<td>Market mark，ethbtc，See below for details</td>
 </tr>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -2181,12 +2181,12 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下:</td>
-<td>订单状态(status)说明：<br>INIT(0,&quot;初始订单，未成交未进入盘口&quot;),<br>NEW_(1,&quot;新订单，未成交进入盘口&quot;),<br>FILLED(2,&quot;完全成交&quot;),<br>PART_FILLED(3,&quot;部分成交&quot;),<br>CANCELED(4,&quot;已撤单&quot;),<br>PENDING_CANCEL(5,&quot;待撤单&quot;),<br>EXPIRED(6,&quot;异常订单&quot;);</td>
+<td>as follows:</td>
+<td>Order status(status)Explain：<br>INIT(0,&quot;Initial order，No deal has not entered the handicap&quot;),<br>NEW_(1,&quot;New order，Unfinished business enters the market&quot;),<br>FILLED(2,&quot;Full deal&quot;),<br>PART_FILLED(3,&quot;Partial transaction&quot;),<br>CANCELED(4,&quot;Withdrawal of documents&quot;),<br>PENDING_CANCEL(5,&quot;Withdrawal of order&quot;),<br>EXPIRED(6,&quot;Abnormal order&quot;);</td>
 </tr>
 </tbody></table>
 <div class="highlight"><pre class="highlight plaintext"><code>{
@@ -2194,7 +2194,7 @@
         "id":343,
         "type":3,
         "side":"sell",
-        "side_msg":"卖出",
+        "side_msg":"sell",
         "created_at":"1592461624033",
         "price":222.33,
         "volume":222.33,
@@ -2204,13 +2204,13 @@
         "source":3,
         "source_msg":"API",
         "status":0, 
-        "status_msg":"未成交",
+        "status_msg":"unsettled",
         "avg_price":222.33}
     }
     "trade_list":[
         {
             "id":343,
-            "created_at":"1592461624033",
+            "created_at":"09-22 12:22",
             "price":222.33,
             "volume":222.33,
             "deal_price":222.33,
@@ -2218,7 +2218,7 @@
         },
         {
             "id":345,
-            "created_at":"1592461624033",
+            "created_at":"09-22 12:22",
             "price":222.33,
             "volume":222.33,
             "deal_price":222.33,
@@ -2226,23 +2226,23 @@
         }
     ]
 }
-</code></pre></div><h3 id='140f5e499a'><span id="17">查询系统支持的所有交易对及精度</span></h3>
+</code></pre></div><h3 id='all-transaction-pairs-and-accuracy-supported-by-query-system'><span id="17">All Transaction Pairs and Accuracy Supported by Query System</span></h3>
 <ol>
-<li>接口地址:/open/api/common/symbols</li>
-<li>接口说明:(get请求)查询系统支持的所有交易对及精度</li>
+<li>Interface address:/open/api/common/symbols</li>
+<li>Interface specification:(get request) query all transaction pairs and accuracy supported by the system</li>
 </ol>
 
 <ul>
-<li>参数:无</li>
+<li>Parameter: None</li>
 </ul>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -2253,12 +2253,12 @@
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下：</td>
-<td>symbol 交易对<br>base_coin 基础币种<br>count_coin 计价货币<br>price_precision 价格精度位数（0为个位）<br>amount_precision 数量精度位数（0为个位）</td>
+<td>as follows：</td>
+<td>symbol Transaction pairs<br>base_coin Base currency<br>count_coin Money of Account<br>price_precision Price Precision Number（0 is a single digit）<br>amount_precision Quantitative precision digits (0 is a single digit)</td>
 </tr>
 </tbody></table>
 <div class="highlight"><pre class="highlight plaintext"><code>{
@@ -2309,74 +2309,74 @@
 }
 ]
 }
-</code></pre></div><h3 id='8dbd99835a'><span id="18">获取用户资产以及充值记录</span></h3>
+</code></pre></div><h3 id='get-user-assets-and-recharge-records'><span id="18">Get user assets and recharge records</span></h3>
 <ol>
-<li>接口地址:/open/api/user_balance_info</li>
-<li>接口说明:(post请求)获取用户资产以及充值记录</li>
+<li>Interface address:/open/api/user_balance_info</li>
+<li>Interface Description:(postRequest) Get user assets and recharge records</li>
 </ol>
 
 <table><thead>
 <tr>
-<th>参数</th>
-<th>填写类型</th>
-<th>说明</th>
+<th>parameter</th>
+<th>Fill in type</th>
+<th>Explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>uid</td>
-<td>选填</td>
-<td>用户uid（用户uid,mobile_number,email三者必须填其中一个）</td>
+<td>Selective filling</td>
+<td>useruid（useruid,mobile_number,emailOne of the three must be filled in）</td>
 </tr>
 <tr>
 <td>mobile_number</td>
-<td>选填</td>
-<td>查询的用户号码，手机号码或者邮箱</td>
+<td>Selective filling</td>
+<td>Inquiry user number, mobile phone number or mailbox</td>
 </tr>
 <tr>
 <td>email</td>
-<td>选填</td>
-<td>用户邮箱</td>
+<td>Selective filling</td>
+<td>email</td>
 </tr>
 <tr>
 <td>api_key</td>
-<td>必填</td>
+<td>Must fill</td>
 <td>api_key</td>
 </tr>
 <tr>
 <td>time</td>
-<td>必填</td>
-<td>时间戳</td>
+<td>Must fill</td>
+<td>time stamp</td>
 </tr>
 <tr>
 <td>sign</td>
-<td>必填</td>
-<td>签名</td>
+<td>Must fill</td>
+<td>autograph</td>
 </tr>
 </tbody></table>
 
-<p>返回值:</p>
+<p>Return value:</p>
 
 <table><thead>
 <tr>
-<th>字段</th>
-<th>实例</th>
-<th>解释</th>
+<th>field</th>
+<th>Example</th>
+<th>explain</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>code</td>
 <td>0</td>
-<td>“0” - &gt; 成功<br>“100004” -&gt;参数不合法<br>“100005” -&gt; 签名错误<br>“100007” -&gt; 非法IP<br>&quot;110032&quot; -&gt; 用户无查询权限<br>“110020” -&gt; 要查询的用户不存在</td>
+<td>“0” - &gt; Success<br>“100004” -&gt;Illegal parameters<br>“100005” -&gt; Signature error<br>“100007” -&gt; illegalIP<br>&quot;110032&quot; -&gt; Users do not have query privileges<br>“110020” -&gt; The user to query does not exist</td>
 </tr>
 <tr>
 <td>msg</td>
 <td>&quot;suc&quot;</td>
-<td>code&gt;0失败</td>
+<td>code&gt;0fail</td>
 </tr>
 <tr>
 <td>data</td>
-<td>如下：</td>
-<td>balance_info 各个币种的资产信息<br>deposit_list 充值的流水信息</td>
+<td>as follows：</td>
+<td>balance_info Asset information in various currencies<br>deposit_list Filling Pipeline Information</td>
 </tr>
 </tbody></table>
 <div class="highlight"><pre class="highlight plaintext"><code>{
@@ -2396,125 +2396,126 @@
     },...
 ]
 }
-</code></pre></div><h2 id='ws-api'><span id="b7">ws-api</span></h2><h3 id='k-2'><span id="19">订阅-K线行情</span></h3>
+</code></pre></div><h3 id='subscription-k-line-market'><span id="19">Subscription - K Line Market</span></h3>
 <ul>
-<li>请求:
+<li>request:
 <code>
-{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;自定义&quot;}}
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;custom&quot;}}
 </code></li>
-<li>返回订阅状态1次:
+<li>Return to subscription status once:
 <code>
-{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;Please Return by the Way You Came&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
 </code></li>
-<li>持续返回订阅消息:
-<code>
-{
-&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,//订阅的交易对行情$base$quote表示btckrw等
-&quot;ts&quot;:1506584998239,//请求时间
-&quot;tick&quot;:{
-    &quot;id&quot;:1506602880,//时间刻度起始值
-    &quot;amount&quot;:123.1221,//交易额
-    &quot;vol&quot;:1212.12211,//交易量
-    &quot;open&quot;:2233.22,//开盘价
-    &quot;close&quot;:1221.11,//收盘价
-    &quot;high&quot;:22322.22,//最高价
-    &quot;low&quot;:2321.22//最低价
-}
-}
-</code></li>
-</ul>
-<h3 id='24'><span id="20">订阅-前24小时行情</span></h3>
-<ul>
-<li>请求:
-<code>
-{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_ticker&quot;,&quot;cb_id&quot;:&quot;自定义&quot;}}
-</code></li>
-<li>返回订阅状态1次:
+<li><p>Continue to return subscription messages:
 ```
-{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_ticker&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;,&quot;lower_frame&quot;:&quot;0&quot;} // lower_frame: 0 币对没下架、 1 币对下架</li>
+{
+&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,//Subscription transactions versus market$base$quoteExpressbtckrwetc.</p>
+
+<p>&quot;ts&quot;:1506584998239,//Request time
+&quot;tick&quot;:{
+    &quot;id&quot;:1506602880,//Time scale starting value
+    &quot;amount&quot;:123.1221,//A turnover
+    &quot;vol&quot;:1212.12211,//Trading volume
+    &quot;open&quot;:2233.22,//Opening price
+    &quot;close&quot;:1221.11,//Closing price
+    &quot;high&quot;:22322.22,//Highest price
+    &quot;low&quot;:2321.22//Minimum price
+}
+}
+```</p></li>
 </ul>
-<div class="highlight"><pre class="highlight plaintext"><code>* 持续返回订阅消息:
+<h3 id='subscription-market-quotations-in-the-last-24-hours'><span id="20">Subscription - market quotations in the last 24 hours</span></h3>
+<ul>
+<li>request:
+<code>
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_ticker&quot;,&quot;cb_id&quot;:&quot;custom&quot;}}
+</code></li>
+<li>Return to subscription status once:
+```
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_ticker&quot;,&quot;cb_id&quot;:&quot;Please Return by the Way You Came&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;,&quot;lower_frame&quot;:&quot;0&quot;} // lower_frame: 0 No coin pair off the shelf、 1 Coin pair</li>
+</ul>
+<div class="highlight"><pre class="highlight plaintext"><code>* Continue to return subscription messages:
 </code></pre></div>
 <p>{
-    &quot;channel&quot;:&quot;market_$base$quote_ticker&quot;,//订阅的交易对行情$base$quote表示btckrw等
-    &quot;ts&quot;:1506584998239,//请求时间
+    &quot;channel&quot;:&quot;market_$base$quote_ticker&quot;,//Subscription transactions versus market$base$quoteExpress btckrw etc.
+    &quot;ts&quot;:1506584998239,//Request time
     &quot;tick&quot;:{
-        &quot;id&quot;:1506584998,//冗余，无实际意义，时间戳
-        &quot;amount&quot;:123.1221,//交易额
-        &quot;vol&quot;:1212.12211,//交易量
-        &quot;open&quot;:2233.22,//开盘价
-        &quot;close&quot;:1221.11,//收盘价
-        &quot;high&quot;:22322.22,//最高价
-        &quot;low&quot;:2321.22,//最低价
-        &quot;rose&quot;:-0.2922,//涨幅
-        &quot;ts&quot;:1506584998239,//数据产生时间
+        &quot;id&quot;:1506584998,//Redundancy, no practical significance, timestamp
+        &quot;amount&quot;:123.1221,//A turnover
+        &quot;vol&quot;:1212.12211,//Trading volume
+        &quot;open&quot;:2233.22,//Opening price
+        &quot;close&quot;:1221.11,//Closing price
+        &quot;high&quot;:22322.22,//Highest price
+        &quot;low&quot;:2321.22,//Minimum price
+        &quot;rose&quot;:-0.2922,//Gain
+        &quot;ts&quot;:1506584998239,//Data generation time
         &quot;lower_frame&quot;:&quot;0&quot;
     }
 }
 ```</p>
-<h3 id='7e5bd7fce9'><span id="21">订阅-深度盘口（高频）</span></h3>
+<h3 id='subscription-deep-port-high-frequency'><span id="21">Subscription - Deep Port (High Frequency)</span></h3>
 <ul>
-<li>请求:
+<li>request:
 <code>
-{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;自定义&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150}}
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;custom&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150}}
 </code></li>
-<li><p>返回订阅状态1次:
+<li><p>Return to subscription status once:
 <code>
-{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;Please Return by the Way You Came&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
 </code></p></li>
-<li><p>注：第一次订阅成功会立刻返回一次全量数据， 另外server也会定期推个全量数据给前端  避免数据出问题</p></li>
-<li><p>全量：前端直接替换原有盘口
+<li><p>Note: The first successful subscription will immediately return a full amount of data, and the server will regularly push a full amount of data to the front-end to avoid data problems</p></li>
+<li><p>Full quantity: the front end directly replaces the original disk outlet
 <code>
 {
-&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,//$base$quote表示btckrw等,深度有3个维度，0、1、2
-&quot;ts&quot;:1506584998239,//请求时间
+&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,//$base$quoteExpressbtckrwetc.,Depth has three dimensions，0、1、2
+&quot;ts&quot;:1506584998239,//Request time
 &quot;tick&quot;:{
-    &quot;asks&quot;:[//卖盘
+    &quot;asks&quot;:[//Selling
         [22112.22,0.9332],
         [22112.21,0.2],
     ],
-    &quot;buys&quot;:[//买盘
+    &quot;buys&quot;:[//Bid
         [22111.22,0.9332],
         [22111.21,0.2],
     ]
 }
 }
 </code></p></li>
-<li><p>注： 增量盘口信息 前端只需要替换价格对应的数量即可， volume=0时删除， price与原有盘口某个价格段的price相等时更新volume,  新的price直接新增</p></li>
-<li><p>增量盘口信息（该盘口变化的价格段）
+<li><p>Note: The front end of incremental inventory information only needs to replace the quantity corresponding to the price， volume=Delete at 0 o&#39;clock， priceWith the original opening of a price segment price Equal-time updatevolume,  Direct addition of new price</p></li>
+<li><p>Direct addition of new price
 <code>
 {
-&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,//$base$quote表示btckrw等,深度有3个维度，0、1、2
-&quot;ts&quot;:1506584998239,//请求时间
+&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,//$base$quoteExpressbtckrwetc.,Depth has 3 dimensions，0、1、2
+&quot;ts&quot;:1506584998239,//Request time
 &quot;tick&quot;:{
-    &quot;side&quot;: &quot;asks&quot;, 买卖盘方向  asks： 卖盘  buys: 买盘  
-    &quot;price&quot; : 133.55,  盘口对应的某个价格段
-    &quot;volume&quot; : 44.22   价格段对应的数量
+    &quot;side&quot;: &quot;asks&quot;, Trading Direction  asks：Selling  buys: Bid  
+    &quot;price&quot; : 133.55,  A price segment corresponding to the opening
+    &quot;volume&quot; : 44.22   Quantity corresponding to price segment
 }
 }
 </code></p></li>
 </ul>
-<h3 id='c825d2a6c4'><span id="22">订阅-深度盘口</span></h3>
+<h3 id='subscription-deep-port'><span id="22">Subscription - Deep Port</span></h3>
 <ul>
-<li>请求:
+<li>request:
 <code>
-{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;自定义&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150}}
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;custom&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150}}
 </code></li>
-<li>返回订阅状态1次:
+<li>Return to subscription status once:
 <code>
-{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;Please Return by the Way You Came&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
 </code></li>
-<li>持续返回订阅消息:
+<li>Continue to return subscription messages:
 <code>
 {
-&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,//$base$quote表示btckrw等,深度有3个维度，0、1、2
-&quot;ts&quot;:1506584998239,//请求时间
+&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,//$base$quoteRepresents btckrw, etc.,Depth has 3 dimensions，0、1、2
+&quot;ts&quot;:1506584998239,//Request time
 &quot;tick&quot;:{
-    &quot;asks&quot;:[//卖盘
+    &quot;asks&quot;:[//Selling
         [22112.22,0.9332],
         [22112.21,0.2]
     ],
-    &quot;buys&quot;:[//买盘
+    &quot;buys&quot;:[//Bid
         [22111.22,0.9332],
         [22111.21,0.2]
     ]
@@ -2522,41 +2523,41 @@
 }
 </code></li>
 </ul>
-<h3 id='a3f68bd2a5'><span id="23">订阅-实时成交信息 </span></h3>
+<h3 id='subscription-real-time-transaction-information'><span id="23">Subscription-Real-time Transaction Information </span></h3>
 <ul>
-<li>请求:
+<li>request:
 <code>
-{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;自定义&quot;}}
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;custom&quot;}}
 </code></li>
-<li>返回订阅状态1次:
+<li>Return to subscription status once:
 <code>
-{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;Please Return by the Way You Came&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
 </code></li>
-<li>持续返回订阅消息:
+<li>Continue to return subscription messages:
 <code>
 {
-&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,//订阅的交易对行情$base$quote表示btckrw等
-&quot;ts&quot;:1506584998239,//请求时间
+&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,//Subscription transactions versus market$base$quoteExpressbtckrwetc.
+&quot;ts&quot;:1506584998239,//Request time
 &quot;tick&quot;:{
-    &quot;id&quot;:12121,//data中最大交易ID
-    &quot;ts&quot;:1506584998239,//data中最大时间
+    &quot;id&quot;:12121,//dataThe biggest deal ID
+    &quot;ts&quot;:1506584998239,//dataThe biggest deal
     &quot;data&quot;:[
         {
-            &quot;id&quot;:12121,//交易ID
-            &quot;side&quot;:&quot;buy&quot;,//买卖方向buy,sell
-            &quot;price&quot;:32.233,//单价
-            &quot;vol&quot;:232,//数量
-            &quot;amount&quot;:323,//总额
-            &quot;ts&quot;:1506584998239,//数据产生时间
+            &quot;id&quot;:12121,//transaction ID
+            &quot;side&quot;:&quot;buy&quot;,//Direction of business buy,sell
+            &quot;price&quot;:32.233,//Unit Price
+            &quot;vol&quot;:232,//Number
+            &quot;amount&quot;:323,//Total
+            &quot;ts&quot;:1506584998239,//Data generation time
             &quot;ds&quot;:&#39;2017-09-10 23:12:21&#39;
         },
         {
-            &quot;id&quot;:12120,//交易ID
-            &quot;side&quot;:&quot;buy&quot;,//买卖方向buy,sell
-            &quot;price&quot;:32.233,//单价
-            &quot;vol&quot;:232,//数量
-            &quot;amount&quot;:323,//总额
-            &quot;ts&quot;:1506584998239,//数据产生时间
+            &quot;id&quot;:12120,//Transaction ID
+            &quot;side&quot;:&quot;buy&quot;,//Direction of business buy,sell
+            &quot;price&quot;:32.233,//Unit Price
+            &quot;vol&quot;:232,//Number
+            &quot;amount&quot;:323,//Total
+            &quot;ts&quot;:1506584998239,//Data generation time
             &quot;ds&quot;:&#39;2017-09-10 23:12:21&#39;
         }
     ]
@@ -2564,82 +2565,82 @@
 }
 </code></li>
 </ul>
-<h3 id='k-3'><span id="24">请求-K线历史数据</span></h3>
+<h3 id='request-k-line-history-data'><span id="24">Request-K Line History Data</span></h3>
 <ul>
-<li><p>增加请求参数endIdx，pageSize（最多300，默认300条数据）,如果endIdx为空，则返回最近300条历史数据</p></li>
-<li><p>请求:
+<li><p>Increase request parameters endIdx，pageSize（Up to 300, default 300 data）,If endIdx is empty, the last 300 historical data are returned</p></li>
+<li><p>request:
 <code>
-{&quot;event&quot;:&quot;req&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;自定义&quot;,&quot;since&quot;:&quot;1506602880&quot;}}//since缺省时返回最新300条，有值时返回大于since的最多1小时数据，since有强校验，不能早于当前1小时  since取到59
-</code></p></li>
-<li><p>返回一次历史数据:
+{&quot;event&quot;:&quot;req&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;custom&quot;,&quot;since&quot;:&quot;1506602880&quot;}}//since The default is to return the latest 300, a return value greater than since for up to 1 hours of data, since has strong check, not earlier than the current 1 hours to 59 since</code>
+* Return a historical data:
 <code>
+</code>
 {
-&quot;event_rep&quot;:&quot;rep&quot;,&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,
-&quot;since&quot;:&quot;1506602880&quot;,//since缺省时返回最新300条，有值时返回大于since的最多1小时数据，since有强校验，不能早于当前1小时
-&quot;ts&quot;:1506584998239,//请求时间
-&quot;data&quot;:[//300条
+&quot;event_rep&quot;:&quot;rep&quot;,&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;Please Return by the Way You Came&quot;,
+&quot;since&quot;:&quot;1506602880&quot;,//since Return the latest 300 items by default, return the maximum 1 hour data larger than since when it has value, and since has strong check, not earlier than the current 1 hour.
+&quot;ts&quot;:1506584998239,//Request time
+&quot;data&quot;:[//300 article
     {
-        &quot;id&quot;:1506602880,//时间刻度起始值
-        &quot;amount&quot;:123.1221,//交易额
-        &quot;vol&quot;:1212.12211,//交易量
-        &quot;open&quot;:2233.22,//开盘价
-        &quot;close&quot;:1221.11,//收盘价
-        &quot;high&quot;:22322.22,//最高价
-        &quot;low&quot;:2321.22//最低价
+        &quot;id&quot;:1506602880,//Time scale starting value
+        &quot;amount&quot;:123.1221,//A turnover
+        &quot;vol&quot;:1212.12211,//Trading volume
+        &quot;open&quot;:2233.22,//Opening price
+        &quot;close&quot;:1221.11,//Closing price
+        &quot;high&quot;:22322.22,//Highest price
+        &quot;low&quot;:2321.22//Minimum price
     },
     {
-        &quot;id&quot;:1506602880,//时间刻度起始值
-        &quot;amount&quot;:123.1221,//交易额
-        &quot;vol&quot;:1212.12211,//交易量
-        &quot;open&quot;:2233.22,//开盘价
-        &quot;close&quot;:1221.11,//收盘价
-        &quot;high&quot;:22322.22,//最高价
-        &quot;low&quot;:2321.22//最低价
+        &quot;id&quot;:1506602880,//Time scale starting value
+        &quot;amount&quot;:123.1221,//A turnover
+        &quot;vol&quot;:1212.12211,//Trading volume
+        &quot;open&quot;:2233.22,//Opening price
+        &quot;close&quot;:1221.11,//Closing price
+        &quot;high&quot;:22322.22,//Highest price
+        &quot;low&quot;:2321.22//Minimum price
     }
 ]
 }
-</code></p></li>
+```</p></li>
 </ul>
-<h3 id='dc4d04972a'><span id="25">请求-成交历史数据 </span></h3>
+<h3 id='request-transaction-history-data'><span id="25">Request-transaction history data </span></h3>
 <ul>
-<li>请求:
+<li>request:
 <code>
-{&quot;event&quot;:&quot;req&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;自定义&quot;,&quot;top&quot;:200}}
+{&quot;event&quot;:&quot;req&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;custom&quot;,&quot;top&quot;:200}}
 </code></li>
-<li>直接返回成交信息:
+<li>Direct return of transaction information:
 <code>
 {
-&quot;event_rep&quot;:&quot;rep&quot;,&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;,
-&quot;top&quot;:200,//最大支持200
+&quot;event_rep&quot;:&quot;rep&quot;,&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;Please Return by the Way You Came&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;,
+&quot;top&quot;:200,//Maximum support 200
 &quot;data&quot;:[
     {
-        &quot;id&quot;:12121,//交易ID
-        &quot;side&quot;:&quot;buy&quot;,//买卖方向buy,sell
-        &quot;price&quot;:32.233,//单价
-        &quot;vol&quot;:232,//数量
-        &quot;amount&quot;:323,//总额
-        &quot;ts&quot;:1506584998239//数据产生时间
+        &quot;id&quot;:12121,//Transaction ID
+        &quot;side&quot;:&quot;buy&quot;,//Direction of businessbuy,sell
+        &quot;price&quot;:32.233,//Unit Price
+        &quot;vol&quot;:232,//Number
+        &quot;amount&quot;:323,//Total
+        &quot;ts&quot;:1506584998239//Data generation time
     },
     {
-        &quot;id&quot;:12120,//交易ID
-        &quot;side&quot;:&quot;buy&quot;,//买卖方向buy,sell
-        &quot;price&quot;:32.233,//单价
-        &quot;vol&quot;:232,//数量
-        &quot;amount&quot;:323,//总额
-        &quot;ts&quot;:1506584998239,//数据产生时间
+        &quot;id&quot;:12120,//Transaction ID
+        &quot;side&quot;:&quot;buy&quot;,//Direction of business buy,sell
+        &quot;price&quot;:32.233,//Unit Price
+        &quot;vol&quot;:232,//Number
+        &quot;amount&quot;:323,//Total
+        &quot;ts&quot;:1506584998239,//Data generation time
         &quot;ds&quot;:&#39;2017-09-10 23:12:21&#39;
     }
 ]
 }
 </code></li>
 </ul>
-<h3 id='24-2'><span id="26">请求-首页24行情数据</span></h3>
+<h3 id='request-24-market-data-on-home-page'><span id="26">Request - 24 Market Data on Home Page-</span></h3>
 <ul>
-<li>请求方式:
+<li>Request mode:
 <code>
 {&quot;event&quot;:&quot;req&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;review&quot;}}
 </code></li>
-<li>返回数据示例:
+<li>Return an example of data:
 <code>
 {
 event_rep: &quot;rep&quot;,
@@ -2675,24 +2676,24 @@ data: {
      <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">args</span>
      <span class="p">*/</span>
     <span class="k">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="k">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-<span class="p">/**</span> <span class="m">4</span><span class="err">个变量，</span><span class="n">api_key</span><span class="p">,</span><span class="n">secret_key</span> <span class="p">*/</span> 
+<span class="p">/**</span> <span class="m">4</span> <span class="n">variables</span><span class="err">，</span><span class="n">api_key</span><span class="p">,</span><span class="n">secret_key</span> <span class="p">*/</span> 
  <span class="k">String</span> <span class="n">api_key</span> <span class="p">=</span> <span class="s2">"9750*****************65d1"</span><span class="p">;</span>
  <span class="k">String</span> <span class="n">secret_key</span> <span class="p">=</span> <span class="s2">"1c16******************2982"</span><span class="p">;</span>
 
-        <span class="p">/**</span> <span class="err">封装需要签名的参数</span> <span class="p">*/</span>
+ <span class="p">/**</span> <span class="n">Encapsulation</span> <span class="k">of</span> <span class="k">parameters</span> <span class="n">requiring</span> <span class="n">signature</span> <span class="p">*/</span>
         <span class="n">TreeMap</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">params</span> <span class="p">=</span> <span class="n">new</span> <span class="n">TreeMap</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;();</span>
         <span class="n">params</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s2">"api_key"</span><span class="p">,</span> <span class="n">api_key</span><span class="p">);</span>
         <span class="n">params</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s2">"time"</span><span class="p">,</span> <span class="n">new</span> <span class="n">Date</span><span class="p">().</span><span class="nf">getTime</span><span class="p">()</span> <span class="p">+</span> <span class="s2">""</span><span class="p">);</span>
-        <span class="p">/**</span> <span class="err">拼接签名字符串，</span><span class="n">md5</span><span class="err">签名</span> <span class="p">*/</span>
+<span class="p">/**</span> <span class="n">Splice</span> <span class="n">signature</span> <span class="k">string</span><span class="p">,</span> <span class="n">MD5</span> <span class="n">signature</span> <span class="p">*/</span>
         <span class="n">StringBuilder</span> <span class="n">result</span> <span class="p">=</span> <span class="n">new</span> <span class="n">StringBuilder</span><span class="p">();</span>
         <span class="k">Set</span><span class="p">&lt;</span><span class="n">Entry</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;&gt;</span> <span class="n">entrys</span> <span class="p">=</span> <span class="n">params</span><span class="p">.</span><span class="n">entrySet</span><span class="p">();</span>
         <span class="n">for</span> <span class="p">(</span><span class="n">Entry</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">param</span> <span class="p">:</span> <span class="n">entrys</span><span class="p">)</span> <span class="p">{</span>
-            <span class="p">/**</span> <span class="err">去掉签名字段</span> <span class="p">*/</span>
+<span class="p">/**</span> <span class="n">Remove</span> <span class="n">the</span> <span class="n">signature</span> <span class="n">field</span> <span class="p">*/</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="n">getKey</span><span class="p">().</span><span class="n">equals</span><span class="p">(</span><span class="s2">"sign"</span><span class="p">))</span> <span class="p">{</span>
                 <span class="n">continue</span><span class="p">;</span>
-            <span class="p">}</span><span class="n">https</span><span class="p">://</span><span class="n">openapi</span><span class="p">.</span><span class="n">wbf</span><span class="p">.</span><span class="n">info</span> 
+            <span class="p">}</span>
 
-            <span class="p">/**</span> <span class="err">空参数不参与签名</span> <span class="p">*/</span>
+<span class="p">/**</span> <span class="n">Empty</span> <span class="k">parameters</span> <span class="k">do</span> <span class="k">not</span> <span class="n">participate</span> <span class="k">in</span> <span class="n">signature</span> <span class="p">*/</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="nf">getValue</span><span class="p">()</span> <span class="c1">!= null) {
 </span>                <span class="n">result</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="n">getKey</span><span class="p">());</span>
                 <span class="n">result</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="nf">getValue</span><span class="p">().</span><span class="n">toString</span><span class="p">());</span>
@@ -2702,16 +2703,16 @@ data: {
         <span class="k">String</span> <span class="n">sign</span> <span class="p">=</span> <span class="n">getMD5</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="n">toString</span><span class="p">());</span>
         <span class="n">params</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s2">"sign"</span><span class="p">,</span> <span class="n">sign</span><span class="p">);</span>
 
-        <span class="p">/**</span> <span class="n">http</span><span class="err">请求</span> <span class="p">*/</span>
-        <span class="k">String</span> <span class="n">resultJson</span> <span class="p">=</span> <span class="n">get</span><span class="p">(</span><span class="s2">"https://openapi.wbfex.com/open/api/get_trades?symbol=btcusdt"</span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+<span class="p">/**</span> <span class="n">http</span> <span class="n">request</span> <span class="p">*/</span>
+        <span class="k">String</span> <span class="n">resultJson</span> <span class="p">=</span> <span class="n">get</span><span class="p">(</span><span class="s2">"https://api.Exchange.com/open/api/get_trades?symbol=btcusdt"</span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
         <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">resultJson</span><span class="p">);</span>
     <span class="p">}</span>
 
     <span class="p">/**</span>
-     <span class="p">*</span> <span class="err">通过</span><span class="n">post</span><span class="err">来提交数据，带参数的方法</span>
+     <span class="p">*</span> <span class="n">The</span> <span class="n">method</span> <span class="k">of</span> <span class="n">submitting</span> <span class="n">data</span> <span class="k">with</span> <span class="k">parameters</span> <span class="n">by</span> <span class="n">post</span>
      <span class="p">*</span>
-     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">url</span>    <span class="err">请求地址</span>
-     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">params</span> <span class="err">参数</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">url</span>    <span class="n">Request</span> <span class="n">address</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">params</span> <span class="n">parameter</span>
      <span class="p">*</span> <span class="p">@</span><span class="n">return</span>
      <span class="p">*/</span>
     <span class="k">public</span> <span class="n">static</span> <span class="k">String</span> <span class="n">post</span><span class="p">(</span><span class="k">String</span> <span class="n">url</span><span class="p">,</span> <span class="n">Map</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">params</span><span class="p">)</span> <span class="p">{</span>
@@ -2719,7 +2720,7 @@ data: {
         <span class="n">try</span> <span class="p">{</span>
             <span class="n">HttpClient</span> <span class="n">client</span> <span class="p">=</span> <span class="n">new</span> <span class="n">HttpClient</span><span class="p">();</span>
             <span class="n">PostMethod</span> <span class="n">method</span> <span class="p">=</span> <span class="n">new</span> <span class="n">PostMethod</span><span class="p">(</span><span class="n">url</span><span class="p">);</span>
-            <span class="p">//</span><span class="err">设定请求头的样式</span> 
+<span class="p">//</span><span class="n">Setting</span> <span class="n">the</span> <span class="n">style</span> <span class="k">of</span> <span class="n">the</span> <span class="n">request</span> <span class="n">header</span> 
             <span class="n">method</span><span class="p">.</span><span class="n">setRequestHeader</span><span class="p">(</span><span class="s2">"Content-Type"</span><span class="p">,</span> <span class="s2">"application/x-www-form-urlencoded;charset=utf-8"</span><span class="p">);</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">params</span> <span class="c1">!= null &amp;&amp; params.size() &gt; 0) {
 </span>                <span class="n">for</span> <span class="p">(</span><span class="n">Map</span><span class="p">.</span><span class="n">Entry</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">entry</span> <span class="p">:</span> <span class="n">params</span><span class="p">.</span><span class="n">entrySet</span><span class="p">())</span> <span class="p">{</span>
@@ -2739,10 +2740,10 @@ data: {
     <span class="p">}</span>
 
     <span class="p">/**</span>
-     <span class="p">*</span> <span class="err">通过</span><span class="n">get</span><span class="err">来提交数据，带参数的方法</span>
+     <span class="p">*</span> <span class="n">Method</span> <span class="k">of</span> <span class="n">submitting</span> <span class="n">data</span> <span class="k">with</span> <span class="k">parameters</span> <span class="n">by</span> <span class="n">get</span>
      <span class="p">*</span>
-     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">url</span>    <span class="err">请求地址</span>
-     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">params</span> <span class="err">参数</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">url</span>    <span class="n">Request</span> <span class="n">address</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">params</span> <span class="n">parameter</span>
      <span class="p">*</span> <span class="p">@</span><span class="n">return</span>
      <span class="p">*/</span>
     <span class="k">public</span> <span class="n">static</span> <span class="k">String</span> <span class="n">get</span><span class="p">(</span><span class="k">String</span> <span class="n">url</span><span class="p">,</span> <span class="n">Map</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">params</span><span class="p">)</span> <span class="p">{</span>
@@ -2763,7 +2764,7 @@ data: {
             <span class="n">HttpClient</span> <span class="n">client</span> <span class="p">=</span> <span class="n">new</span> <span class="n">HttpClient</span><span class="p">();</span>
             <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"url:::"</span> <span class="p">+</span> <span class="n">url</span><span class="p">);</span>
             <span class="n">GetMethod</span> <span class="n">method</span> <span class="p">=</span> <span class="n">new</span> <span class="n">GetMethod</span><span class="p">(</span><span class="n">url</span><span class="p">);</span>
-            <span class="p">//</span><span class="err">设定请求头的样式</span> 
+<span class="p">//</span><span class="n">Setting</span> <span class="n">the</span> <span class="n">style</span> <span class="k">of</span> <span class="n">the</span> <span class="n">request</span> <span class="n">header</span> 
             <span class="n">method</span><span class="p">.</span><span class="n">setRequestHeader</span><span class="p">(</span><span class="s2">"Content-Type"</span><span class="p">,</span> <span class="s2">"application/x-www-form-urlencoded;charset=utf-8"</span><span class="p">);</span>
             <span class="n">int</span> <span class="n">code</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">executeMethod</span><span class="p">(</span><span class="n">method</span><span class="p">);</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">code</span> <span class="p">&gt;=</span> <span class="m">200</span> <span class="p">&amp;&amp;</span> <span class="n">code</span> <span class="p">&lt;</span> <span class="m">300</span><span class="p">)</span> <span class="p">{</span>
@@ -2771,57 +2772,54 @@ data: {
                 <span class="n">str</span> <span class="p">=</span> <span class="n">IOUtils</span><span class="p">.</span><span class="n">toString</span><span class="p">(</span><span class="k">in</span><span class="p">);</span>
             <span class="p">}</span>
         <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-            <span class="p">//</span> <span class="n">TODO</span> <span class="n">Auto</span><span class="p">-</span><span class="n">generated</span> <span class="n">catch</span> <span class="n">block</span> 
+<span class="p">//</span> <span class="n">TODO</span> <span class="n">Auto</span><span class="p">-</span><span class="n">generated</span> <span class="n">catch</span> <span class="n">block</span> 
             <span class="n">e</span><span class="p">.</span><span class="n">printStackTrace</span><span class="p">();</span>
         <span class="p">}</span>
         <span class="n">return</span> <span class="n">str</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="p">/**</span>
-     <span class="p">*</span> <span class="err">获取</span><span class="n">String</span><span class="err">的</span><span class="n">MD5</span><span class="err">值</span>
-     <span class="p">*</span>
-     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">info</span> <span class="err">字符串</span>
-     <span class="p">*</span> <span class="p">@</span><span class="n">return</span> <span class="err">该字符串的</span><span class="n">MD5</span><span class="err">值</span>
-     <span class="p">*/</span>
-    <span class="k">public</span> <span class="n">static</span> <span class="k">String</span> <span class="n">getMD5</span><span class="p">(</span><span class="k">String</span> <span class="n">info</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">try</span> <span class="p">{</span>
-            <span class="p">//</span><span class="err">获取</span> <span class="n">MessageDigest</span> <span class="err">对象，参数为</span> <span class="n">MD5</span> <span class="err">字符串，表示这是一个</span> <span class="n">MD5</span> <span class="err">算法（其他还有</span> <span class="n">SHA1</span> <span class="err">算法等）：</span> 
-            <span class="n">MessageDigest</span> <span class="n">md5</span> <span class="p">=</span> <span class="n">MessageDigest</span><span class="p">.</span><span class="n">getInstance</span><span class="p">(</span><span class="s2">"MD5"</span><span class="p">);</span>
+     <span class="p">*</span> <span class="n">Get</span> <span class="k">String</span><span class="s1">'s MD5 value
+     *
+     * @param info Character string
+     * @return The MD5 value of the string
+     */
+    public static String getMD5(String info) {
+        try {
+//Gets the MessageDigest object with a parameter of MD5 string, indicating that this is an MD5 algorithm (and other SHA1 algorithms, etc.)： 
+            MessageDigest md5 = MessageDigest.getInstance("MD5");
+//update(byte[])Method, input original data 
+//Similar StringBuilder Object append()Method, add mode, is a cumulative change process 
+            md5.update(info.getBytes("UTF-8"));
+//digest()After being invoked, the MessageDigest object is reset, that means that, the method cannot be called again continuously to calculate the MD5 value of the original data.You can manually call the reset () method to reset the input source。 
+//Digest () Returns a 16-bit hash value, which is accepted by byte [] 
+            byte[] md5Array = md5.digest();
+//byte[]Usually we convert it to a 32-bit hexadecimal string. This article introduces three common conversion methods. 
+            return bytesToHex(md5Array);
+        } catch (NoSuchAlgorithmException e) {
+            return "";
+        } catch (UnsupportedEncodingException e) {
+            return "";
+        }
+    }
 
-            <span class="p">//</span><span class="n">update</span><span class="p">(</span><span class="n">byte</span><span class="p">[])</span><span class="err">方法，输入原数据</span> 
-            <span class="p">//</span><span class="err">类似</span><span class="n">StringBuilder</span><span class="err">对象的</span><span class="n">append</span><span class="p">()</span><span class="err">方法，追加模式，属于一个累计更改的过程</span> 
-            <span class="n">md5</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">getBytes</span><span class="p">(</span><span class="s2">"UTF-8"</span><span class="p">));</span>
+    private static String bytesToHex(byte[] md5Array) {
+        StringBuilder strBuilder = new StringBuilder();
+        for (int i = 0; i &lt; md5Array.length; i++) {
+            int temp = 0xff &amp; md5Array[i];
+            String hexString = Integer.toHexString(temp);
+            if (hexString.length() == 1) {//If it is hexadecimal 0f, only f is displayed by default, and then 0 is added
+                strBuilder.append("0").append(hexString);
+            } else {
+                strBuilder.append(hexString);
+            }
+        }
+        return strBuilder.toString();
+    }
 
-            <span class="p">//</span><span class="n">digest</span><span class="p">()</span><span class="err">被调用后</span><span class="p">,</span><span class="n">MessageDigest</span><span class="err">对象就被重置，即不能连续再次调用该方法计算原数据的</span><span class="n">MD5</span><span class="err">值。可以手动调用</span><span class="nb">reset</span><span class="p">()</span><span class="err">方法重置输入源。</span> 
-            <span class="p">//</span><span class="n">digest</span><span class="p">()</span><span class="err">返回值</span><span class="m">16</span><span class="err">位长度的哈希值，由</span><span class="n">byte</span><span class="p">[]</span><span class="err">承接</span> 
-            <span class="n">byte</span><span class="p">[]</span> <span class="n">md5Array</span> <span class="p">=</span> <span class="n">md5</span><span class="p">.</span><span class="n">digest</span><span class="p">();</span>
+}
 
-            <span class="p">//</span><span class="n">byte</span><span class="p">[]</span><span class="err">通常我们会转化为十六进制的</span><span class="m">32</span><span class="err">位长度的字符串来使用</span><span class="p">,</span><span class="err">本文会介绍三种常用的转换方法</span> 
-            <span class="n">return</span> <span class="n">bytesToHex</span><span class="p">(</span><span class="n">md5Array</span><span class="p">);</span>
-        <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">NoSuchAlgorithmException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">return</span> <span class="s2">""</span><span class="p">;</span>
-        <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">UnsupportedEncodingException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">return</span> <span class="s2">""</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="n">private</span> <span class="n">static</span> <span class="k">String</span> <span class="n">bytesToHex</span><span class="p">(</span><span class="n">byte</span><span class="p">[]</span> <span class="n">md5Array</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">StringBuilder</span> <span class="n">strBuilder</span> <span class="p">=</span> <span class="n">new</span> <span class="n">StringBuilder</span><span class="p">();</span>
-        <span class="n">for</span> <span class="p">(</span><span class="n">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">md5Array</span><span class="p">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
-            <span class="n">int</span> <span class="n">temp</span> <span class="p">=</span> <span class="m">0xff</span> <span class="p">&amp;</span> <span class="n">md5Array</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-            <span class="k">String</span> <span class="n">hexString</span> <span class="p">=</span> <span class="k">Integer</span><span class="p">.</span><span class="n">toHexString</span><span class="p">(</span><span class="n">temp</span><span class="p">);</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">hexString</span><span class="p">.</span><span class="n">length</span><span class="p">()</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{//</span><span class="err">如果是十六进制的</span><span class="m">0f</span><span class="err">，默认只显示</span><span class="n">f</span><span class="err">，此时要补上</span><span class="m">0</span>
-                <span class="n">strBuilder</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"0"</span><span class="p">).</span><span class="n">append</span><span class="p">(</span><span class="n">hexString</span><span class="p">);</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="n">strBuilder</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">hexString</span><span class="p">);</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="n">return</span> <span class="n">strBuilder</span><span class="p">.</span><span class="n">toString</span><span class="p">();</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-
-</code></pre></div><h2 id='ws-api-demo-java'><span id="ws-api-java">ws-api Demo (java) </span></h2><div class="highlight"><pre class="highlight mosel"><code>
+</span></code></pre></div><h2 id='ws-api-demo-java'><span id="ws-api-java">ws-api Demo (java) </span></h2><div class="highlight"><pre class="highlight mosel"><code>
 <span class="k">package</span> <span class="n">test</span><span class="p">;</span>
 
 <span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">ByteArrayInputStream</span><span class="p">;</span>
@@ -2849,8 +2847,8 @@ data: {
 <span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">java_websocket</span><span class="p">.</span><span class="n">handshake</span><span class="p">.</span><span class="n">ServerHandshake</span><span class="p">;</span>
 
 <span class="p">/**</span>
- <span class="p">*</span> <span class="p">@</span><span class="n">author</span> <span class="err">鲫鱼哥</span> <span class="n">DateTime</span><span class="p">:</span><span class="m">2018</span><span class="err">年</span><span class="m">11</span><span class="err">月</span><span class="m">22</span><span class="err">日</span> <span class="err">下午</span><span class="m">9</span><span class="p">:</span><span class="m">25</span><span class="p">:</span><span class="m">20</span> 
- <span class="p">*</span> <span class="err">建议使用的</span><span class="n">websocket</span> <span class="n">client</span><span class="err">版本</span> 
+ <span class="p">*</span> <span class="p">@</span><span class="n">author</span> <span class="n">Squid</span> <span class="n">DateTime</span><span class="p">:</span><span class="n">November</span> <span class="m">22</span><span class="p">,</span> <span class="m">2018</span><span class="p">,</span> <span class="m">9</span><span class="p">:</span><span class="m">25</span><span class="p">:</span><span class="m">20</span> <span class="n">PM</span> 
+ <span class="p">*</span> <span class="n">Suggested</span> <span class="n">use</span> <span class="n">websocket</span> <span class="n">client</span> <span class="n">Edition</span> 
  <span class="p">*</span> <span class="p">&lt;</span><span class="n">dependency</span><span class="p">&gt;</span> 
  <span class="p">*</span> <span class="p">&lt;</span><span class="n">groupId</span><span class="p">&gt;</span><span class="n">org</span><span class="p">.</span><span class="n">java</span><span class="p">-</span><span class="n">websocket</span><span class="p">&lt;/</span><span class="n">groupId</span><span class="p">&gt;</span> 
  <span class="p">*</span> <span class="p">&lt;</span><span class="n">artifactId</span><span class="p">&gt;</span><span class="n">Java</span><span class="p">-</span><span class="n">WebSocket</span><span class="p">&lt;/</span><span class="n">artifactId</span><span class="p">&gt;</span> 
@@ -2864,18 +2862,18 @@ data: {
         <span class="n">try</span> <span class="p">{</span>
 <span class="p">//</span><span class="n">wsurl</span> 
             <span class="k">String</span> <span class="n">url</span> <span class="p">=</span> <span class="s2">"wss://ws.wbf.live/kline-api/ws"</span><span class="p">;</span>
-<span class="p">//</span><span class="err">历史数据请求参数</span> 
+<span class="p">//</span><span class="n">Historical</span> <span class="n">data</span> <span class="n">request</span> <span class="k">parameters</span> 
             <span class="k">String</span> <span class="n">reqParam</span> <span class="p">=</span> <span class="s2">"{"</span><span class="n">event</span><span class="s2">":"</span><span class="n">req</span><span class="s2">","</span><span class="n">params</span><span class="s2">":{"</span><span class="n">channel</span><span class="s2">":"</span><span class="n">market_btcusdt_trade_ticker</span><span class="s2">","</span><span class="n">cb_id</span><span class="s2">":"</span><span class="n">btcusdt</span><span class="s2">","</span><span class="n">top</span><span class="s2">":150}}"</span><span class="p">;</span>
-<span class="p">//</span><span class="err">订阅参数</span> 
+<span class="p">//</span><span class="n">Subscription</span> <span class="k">parameters</span> 
             <span class="k">String</span> <span class="n">subParam</span> <span class="p">=</span> <span class="s2">"{"</span><span class="n">event</span><span class="s2">":"</span><span class="n">sub</span><span class="s2">","</span><span class="n">params</span><span class="s2">":{"</span><span class="n">channel</span><span class="s2">":"</span><span class="n">market_btcusdt_trade_ticker</span><span class="s2">","</span><span class="n">cb_id</span><span class="s2">":"</span><span class="n">btcusdt</span><span class="s2">","</span><span class="n">top</span><span class="s2">":150}}"</span><span class="p">;</span>
 
-<span class="p">//</span><span class="err">初始化请求历史数据</span> 
+<span class="p">//</span><span class="n">Initialization</span> <span class="n">request</span> <span class="n">history</span> <span class="n">data</span> 
             <span class="n">WebSocketUtils</span> <span class="n">wsc</span> <span class="p">=</span> <span class="n">WebSocketUtils</span><span class="p">.</span><span class="n">executeWebSocket</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">reqParam</span><span class="p">);</span>
 
-<span class="p">//</span><span class="err">订阅实时数据</span> 
+<span class="p">//</span><span class="n">Subscribe</span> <span class="k">to</span> <span class="k">real</span><span class="p">-</span><span class="n">time</span> <span class="n">data</span> 
             <span class="n">wsc</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="n">subParam</span><span class="p">);</span>
 
-<span class="p">//</span><span class="err">线程不结束，等待新的消息，一般一分钟左右会有新的成交返回</span>
+<span class="p">//</span><span class="n">Thread</span> <span class="n">does</span> <span class="k">not</span> <span class="k">end</span><span class="p">,</span> <span class="n">waiting</span> <span class="n">for</span> <span class="n">new</span> <span class="n">messages</span><span class="err">，</span><span class="n">www</span><span class="p">.</span><span class="n">Exchange</span><span class="p">.</span><span class="n">com</span> <span class="n">Generally</span><span class="p">,</span> <span class="n">a</span> <span class="n">new</span> <span class="n">deal</span> <span class="n">will</span> <span class="n">return</span> <span class="k">in</span> <span class="n">about</span> <span class="n">a</span> <span class="n">minute</span>
             <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
                 <span class="n">Thread</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="m">1000</span><span class="p">);</span>
             <span class="p">}</span>
@@ -2903,23 +2901,23 @@ data: {
 
         <span class="p">@</span><span class="n">Override</span>
         <span class="k">public</span> <span class="n">void</span> <span class="n">onOpen</span><span class="p">(</span><span class="n">ServerHandshake</span> <span class="n">serverHandshake</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"链接已建立"</span><span class="p">);</span>
+            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Links have been established"</span><span class="p">);</span>
 
         <span class="p">}</span>
 
         <span class="p">@</span><span class="n">Override</span>
         <span class="k">public</span> <span class="n">void</span> <span class="n">onMessage</span><span class="p">(</span><span class="k">String</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"收到字符串消息"</span><span class="p">);</span>
+            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Receive a string message"</span><span class="p">);</span>
         <span class="p">}</span>
 
         <span class="p">@</span><span class="n">Override</span>
         <span class="k">public</span> <span class="n">void</span> <span class="n">onClose</span><span class="p">(</span><span class="n">int</span> <span class="n">i</span><span class="p">,</span> <span class="k">String</span> <span class="n">s</span><span class="p">,</span> <span class="k">boolean</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"链接已关闭"</span><span class="p">);</span>
+            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Link closed"</span><span class="p">);</span>
         <span class="p">}</span>
 
         <span class="p">@</span><span class="n">Override</span>
         <span class="k">public</span> <span class="n">void</span> <span class="n">onError</span><span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"报错啦"</span><span class="p">);</span>
+            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Wrong report"</span><span class="p">);</span>
         <span class="p">}</span>
 
         <span class="p">@</span><span class="n">Override</span>
@@ -2928,12 +2926,12 @@ data: {
                 <span class="k">String</span> <span class="n">marketStr</span> <span class="p">=</span> <span class="n">byteBufferToString</span><span class="p">(</span><span class="n">socketBuffer</span><span class="p">);</span>
                 <span class="k">String</span> <span class="n">market</span> <span class="p">=</span> <span class="n">uncompress</span><span class="p">(</span><span class="n">marketStr</span><span class="p">).</span><span class="n">toLowerCase</span><span class="p">();</span>
                 <span class="k">if</span> <span class="p">(</span><span class="n">market</span><span class="p">.</span><span class="n">contains</span><span class="p">(</span><span class="s2">"ping"</span><span class="p">))</span> <span class="p">{</span>
-                    <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"收到消息ping："</span><span class="p">+</span><span class="n">market</span><span class="p">);</span>
+                    <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Receive messageping："</span><span class="p">+</span><span class="n">market</span><span class="p">);</span>
                     <span class="k">String</span> <span class="n">tmp</span> <span class="p">=</span> <span class="n">market</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"ping"</span><span class="p">,</span> <span class="s2">"pong"</span><span class="p">);</span>
                     <span class="n">wsclient</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="n">market</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"ping"</span><span class="p">,</span> <span class="s2">"pong"</span><span class="p">));</span>
                 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
                     <span class="n">msg</span> <span class="p">=</span> <span class="n">market</span><span class="p">;</span>
-                    <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"收到消息："</span><span class="p">+</span><span class="n">msg</span><span class="p">);</span>
+                    <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"Receive message："</span><span class="p">+</span><span class="n">msg</span><span class="p">);</span>
                 <span class="p">}</span>
             <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
                 <span class="n">e</span><span class="p">.</span><span class="n">printStackTrace</span><span class="p">();</span>
@@ -2975,7 +2973,7 @@ data: {
             <span class="n">return</span> <span class="n">wsclient</span><span class="p">;</span>
         <span class="p">}</span>
 
-        <span class="p">//</span> <span class="n">buffer</span> <span class="err">转</span><span class="k">String</span> 
+        <span class="p">//</span> <span class="n">buffer</span> <span class="n">turn</span> <span class="k">String</span> 
         <span class="k">public</span> <span class="k">String</span> <span class="n">byteBufferToString</span><span class="p">(</span><span class="n">ByteBuffer</span> <span class="n">buffer</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">CharBuffer</span> <span class="n">charBuffer</span> <span class="p">=</span> <span class="n">null</span><span class="p">;</span>
             <span class="n">try</span> <span class="p">{</span>
@@ -2990,7 +2988,7 @@ data: {
             <span class="p">}</span>
         <span class="p">}</span>
 
-        <span class="p">//</span> <span class="err">解压缩</span> 
+        <span class="p">//</span> <span class="n">decompression</span> 
         <span class="k">public</span> <span class="k">String</span> <span class="n">uncompress</span><span class="p">(</span><span class="k">String</span> <span class="n">str</span><span class="p">)</span> <span class="n">throws</span> <span class="n">IOException</span> <span class="p">{</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="p">==</span> <span class="n">null</span> <span class="p">||</span> <span class="n">str</span><span class="p">.</span><span class="n">length</span><span class="p">()</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
                 <span class="n">return</span> <span class="n">str</span><span class="p">;</span>

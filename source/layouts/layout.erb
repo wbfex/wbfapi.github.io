@@ -58,11 +58,13 @@ under the License.
   <body class="<%= page_classes %>" data-languages="<%=h language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>">
     <div class="header">
       <%= image_tag "logo.png", class:'logo' %>
-      <a href="<%= current_page.data.url %>" data-language-name="<%= current_page.data.language %>" class="lang"><%= current_page.data.language %></a>
+      <a href="<%= current_page.data.url %>" class="lang">
+        <span><%= current_page.data.language %></span>
+        <%= image_tag "down.png", class:'down'%>
+      </a>
     </div>
     <a href="#" id="nav-button">
       <span>
-        <%= current_page.data.menu %>
         <%= image_tag('navbar.png') %>
       </span>
     </a>
@@ -80,7 +82,7 @@ under the License.
       <% end %>
       <% if current_page.data.search %>
         <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
+          <input type="text" class="search" id="input-search" placeholder="<%= current_page.data.searchText %>">
         </div>
         <ul class="search-results"></ul>
       <% end %>

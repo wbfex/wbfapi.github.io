@@ -42,17 +42,17 @@ body {
 ////////////////////////////////////////////////////////////////////////////////
 .header {
   width: 100vw;
-  height: 60px;
-  background: #2e3336;
+  height: 48px;
+  background: #1D2635;
   position: fixed;
   top: 0;
   left: 0;
   box-shadow: 0 1px 0 0 #000;
   z-index: 100;
   .logo {
-    padding: 15px;
-    margin-left: 30px;
-    height: 30px;
+    padding: 13px;
+    margin-left: 10px;
+    height: 22px;
     display: block;
     max-width: 100%;
     margin-bottom: $logo-margin;
@@ -63,13 +63,22 @@ body {
     height: 26px;
     line-height: 26px;
     text-align: center;
-    border: 1px solid #009d83;
-    color: #009d83;
+    // border: 1px solid #009d83;
+    color: #828EA1;
     float: right;
     text-decoration: none;
     border-radius: 3px;
     transition: all 300ms;
-    margin: 15px 30px;
+    margin: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .down{
+      width: 8px;
+      height: 4px;
+      margin-left: 6px;
+      margin-top: 2px;
+    }
   }
 }
 #toc > ul > li > a > span {
@@ -85,12 +94,12 @@ body {
   overflow-x: hidden;
   position: fixed;
   z-index: 30;
-  top: 60px;
+  top: 48px;
   left: 0;
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
 
   // language selector for mobile devices
@@ -109,22 +118,23 @@ body {
     margin-top: 20px;
     input {
       background: $nav-bg;
-      border-width: 0 0 1px 0;
-      border-color: $search-box-border-color;
-      padding: 6px 0 6px 20px;
+      padding: 6px 0 6px 34px;
       box-sizing: border-box;
       margin: $nav-v-padding $nav-padding;
       width: $nav-width - ($nav-padding * 2);
       outline: none;
       color: $nav-text;
-      border-radius: 0; /* ios has a default border radius */
+      border-radius:2px;
+      border:1px solid rgba(41,52,72,1);
+      &:focus{
+        border:1px solid $nav-active-text;
+      }
     }
-
     &:before {
       position: absolute;
-      top: 17px;
-      left: $nav-padding;
-      color: $nav-text;
+      top: 18px;
+      left: 27px;
+      color: #828EA1;
       @extend %icon-search;
     }
   }
@@ -179,7 +189,6 @@ body {
 
   // This is the currently selected ToC entry
   .toc-link.active {
-    background-color: $nav-active-bg;
     color: $nav-active-text;
   }
 
@@ -284,7 +293,7 @@ body {
   z-index: 10;
   background-color: $main-bg;
   min-height: 100%;
-  margin-top: 60px;
+  margin-top: 48px;
   padding-bottom: 1px; // prevent margin overflow
 
   // The dark box is what gives the code samples their dark background.
@@ -559,8 +568,8 @@ body {
     padding: 2px;
     margin: -3px;
     border-radius: 4px;
-    border: 1px solid #f7e633;
-    background: linear-gradient(to top left, #f7e633 0%, #f1d32f 100%);
+    border: 1px solid #09AEB0;
+    background: linear-gradient(to top left, #09AEB0 0%, #09AEB0 100%);
   }
 }
 

@@ -14,6 +14,8 @@ url: /en
 
 menu: 菜单
 
+searchText: 搜索
+
 search: true
 
 code_clipboard: true

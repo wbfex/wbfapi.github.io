@@ -19,9 +19,9 @@
       this.pipeline.add(lunr.trimmer, lunr.stopWordFilter);
       var lunrConfig = this;
 
-      $('h1, h2').each(function() {
+      $('h1, h2, h3').each(function() {
         var title = $(this);
-        var body = title.nextUntil('h1, h2');
+        var body = title.nextUntil('h1, h2, h3');
         lunrConfig.add({
           id: title.prop('id'),
           title: title.text(),
@@ -68,12 +68,11 @@
 
     // ESC clears the field
     if (event.keyCode === 27) searchInput.value = '';
-
     if (searchInput.value) {
       var results = index.search(searchInput.value).filter(function(r) {
         return r.score > 0.0001;
       });
-
+      console.log(index)
       if (results.length) {
         searchResults.empty();
         $.each(results, function (index, result) {

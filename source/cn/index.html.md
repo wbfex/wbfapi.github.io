@@ -8,9 +8,17 @@ toc_footers:
 
 includes:
   
-language: English
+language: 简体中文
+
+other_language: English
 
 url: /wbfapi/en
+
+present_url: /wbfapi/cn
+
+active: active
+
+other_active:
 
 menu: 菜单
 

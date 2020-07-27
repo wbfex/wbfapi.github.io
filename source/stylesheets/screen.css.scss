@@ -27,6 +27,8 @@ under the License.
 html,
 body {
   color: $main-text;
+  font-family: PingFangSC-Regular,PingFang SC;
+  font-weight: 400;
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -99,7 +101,6 @@ body {
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 14px;
   font-weight: bold;
 
   // language selector for mobile devices
@@ -361,13 +362,18 @@ body {
   // to place content above the dark box
   position: relative;
   z-index: 30;
-
   &:after {
     content: "";
     display: block;
     clear: both;
   }
-
+  & > h1{
+    background:#F2F6FA;
+  }
+  & > h1,
+  & > h2{
+    color:#31363E;
+  }
   & > h1,
   & > h2,
   & > h3,
@@ -384,7 +390,7 @@ body {
     padding: 0 $main-padding;
     box-sizing: border-box;
     display: block;
-
+    font-size:12px;
     @extend %left-col;
   }
 
@@ -402,11 +408,11 @@ body {
 
   h1 {
     @extend %header-font;
-    font-size: 25px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    font-size: 14px;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
+    height:40px;
+    line-height: 40px;
   }
 
   h1:first-child,
@@ -417,10 +423,9 @@ body {
 
   h2 {
     @extend %header-font;
-    font-size: 19px;
+    font-size: 14px;
     margin-top: 4em;
     margin-bottom: 0;
-    border-top: 1px solid #ccc;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     background-image: linear-gradient(

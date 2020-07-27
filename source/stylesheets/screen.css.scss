@@ -127,6 +127,7 @@ body {
       color: $nav-text;
       border-radius:2px;
       border:1px solid rgba(41,52,72,1);
+      font-size: 12px;
       &:focus{
         border:1px solid $nav-active-text;
       }
@@ -153,6 +154,7 @@ body {
     &.visible {
       height: 30%;
       margin-bottom: 1em;
+      font-size:12px; 
     }
 
     li {

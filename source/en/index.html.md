@@ -245,7 +245,7 @@ Return value:
 |code|	0|	 |
 |msg|	"suc"|	code>0fail|
 |data|	as follows:|
-```
+```javascript
 {
     "count":10,
     "orderList":[
@@ -325,7 +325,7 @@ Return value:
 |code|	0|	 |
 |msg|	"suc"|	code>0fail|
 | data|	as follows:|
-```
+```javascript
 {
     "count":22,
     "resultList":[
@@ -496,7 +496,7 @@ Return value:
 |code|	0|	 
 |msg|	"suc"|	code>0fail|
 |data|	as follows：|Return Value Description<br>date: Server time when data is returned <br>symbol: Transaction pairs（Transaction pairs1(base)Abbreviation_Transaction pairs2(quote)Abbreviation） <br>buy: Buy one price <br>high: Highest price <br>last: Latest Transaction Price <br>low: Minimum price <br>sell: Selling price <br>vol: Volume (latest 24 hours)<br>rose:Ups and downs|
-```
+```javascript
 {
    "date": 1534335607859,
    "ticker": [
@@ -587,7 +587,7 @@ Return value:
 |msg|	"suc"|	code>0fail|
 |data|	as follows：|
 
-```
+```javascript
 [
         [
             1514445780,  //time stamp
@@ -637,7 +637,7 @@ Return value:
 |code|	0	| 
 |msg|	"suc"|	code>0fail|
 |data|	as follows：|
-```
+```javascript
 {
     "high": 1,//Maximum value
     "vol": 10232.26315789,//Trading volume
@@ -679,7 +679,7 @@ Return value:
 |code|	0	| 
 |msg|	"suc"|	code>0fail|
 |data|	as follows：|
-```
+```javascript
 [
         {
             "amount": 0.55,//volume
@@ -768,7 +768,7 @@ Return value:
 |code|	0|	 
 |msg|	"suc"|	code>0fail|
 |data|	as follows：|
-```
+```javascript
 {  
     "tick":{
         "asks":[//Selling
@@ -872,7 +872,7 @@ Return value:
 |code|	0|	 
 |msg|	"suc"|	code>0fail|
 |data|	as follows:|Order status(status)Explain：<br>INIT(0,"Initial order，No deal has not entered the handicap"),<br>NEW_(1,"New order，Unfinished business enters the market"),<br>FILLED(2,"Full deal"),<br>PART_FILLED(3,"Partial transaction"),<br>CANCELED(4,"Withdrawal of documents"),<br>PENDING_CANCEL(5,"Withdrawal of order"),<br>EXPIRED(6,"Abnormal order");|
-```
+```javascript
 {
     "count":10,
     "resultList":[
@@ -948,7 +948,7 @@ Return value:
 |code|	0|	 
 |msg|	"suc"|	code>0fail|
 |data|	as follows:|Order status(status)Explain：<br>INIT(0,"Initial order，No deal has not entered the handicap"),<br>NEW_(1,"New order，Unfinished business enters the market"),<br>FILLED(2,"Full deal"),<br>PART_FILLED(3,"Partial transaction"),<br>CANCELED(4,"Withdrawal of documents"),<br>PENDING_CANCEL(5,"Withdrawal of order"),<br>EXPIRED(6,"Abnormal order");|
-```
+```javascript
 {
     "order_info":{
         "id":343,
@@ -1008,54 +1008,54 @@ Return value:
 |code|	0|	 
 |msg|	"suc"|	code>0fail|
 |data|	as follows：|symbol Transaction pairs<br>base_coin Base currency<br>count_coin Money of Account<br>price_precision Price Precision Number（0 is a single digit）<br>amount_precision Quantitative precision digits (0 is a single digit)|
-```
+```javascript
 {
-"code": "0",
-"msg": "suc",
-"data": [
-{
-"symbol": "ethbtc",
-"count_coin": "btc",
-"amount_precision": 3,
-"base_coin": "eth",
-"price_precision": 8
-},
-{
-"symbol": "ltcbtc",
-"count_coin": "btc",
-"amount_precision": 2,
-"base_coin": "ltc",
-"price_precision": 8
-},
-{
-"symbol": "bchbtc",
-"count_coin": "btc",
-"amount_precision": 3,
-"base_coin": "bch",
-"price_precision": 8
-},
-{
-"symbol": "etcbtc",
-"count_coin": "btc",
-"amount_precision": 2,
-"base_coin": "etc",
-"price_precision": 8
-},
-{
-"symbol": "ltceth",
-"count_coin": "eth",
-"amount_precision": 2,
-"base_coin": "ltc",
-"price_precision": 8
-},
-{
-"symbol": "etceth",
-"count_coin": "eth",
-"amount_precision": 2,
-"base_coin": "etc",
-"price_precision": 8
-}
-]
+    "code": "0",
+    "msg": "suc",
+    "data": [
+        {
+            "symbol": "ethbtc",
+            "count_coin": "btc",
+            "amount_precision": 3,
+            "base_coin": "eth",
+            "price_precision": 8
+        },
+        {
+            "symbol": "ltcbtc",
+            "count_coin": "btc",
+            "amount_precision": 2,
+            "base_coin": "ltc",
+            "price_precision": 8
+        },
+        {
+            "symbol": "bchbtc",
+            "count_coin": "btc",
+            "amount_precision": 3,
+            "base_coin": "bch",
+            "price_precision": 8
+        },
+        {
+            "symbol": "etcbtc",
+            "count_coin": "btc",
+            "amount_precision": 2,
+            "base_coin": "etc",
+            "price_precision": 8
+        },
+        {
+            "symbol": "ltceth",
+            "count_coin": "eth",
+            "amount_precision": 2,
+            "base_coin": "ltc",
+            "price_precision": 8
+        },
+        {
+            "symbol": "etceth",
+            "count_coin": "eth",
+            "amount_precision": 2,
+            "base_coin": "etc",
+            "price_precision": 8
+        }
+    ]
 }
 ```
 
@@ -1082,7 +1082,7 @@ Return value:
 |code|	0|“0” - > Success<br>“100004” ->Illegal parameters<br>“100005” -> Signature error<br>“100007” -> illegalIP<br>"110032" -> Users do not have query privileges<br>“110020” -> The user to query does not exist|
 |msg|	"suc"|	code>0fail|
 |data|	as follows：|balance_info Asset information in various currencies<br>deposit_list Filling Pipeline Information|
-```
+```javascript
 {
 "balance_info":[
     {
@@ -1135,11 +1135,11 @@ Return value:
 
 
 * request:
-```
+```javascript
 {"event":"sub","params":{"channel":"market_$base$quote_ticker","cb_id":"custom"}}
 ```
 * Return to subscription status once:
-```
+```javascript
 {"event_rep":"subed","channel":"market_$base$quote_ticker","cb_id":"Please Return by the Way You Came","ts":1506584998239,"status":"ok","lower_frame":"0"} // lower_frame: 0 No coin pair off the shelf、 1 Coin pair
 
 ```
@@ -1168,18 +1168,18 @@ Return value:
 
 
 * request:
-```
+```javascript
 {"event":"sub","params":{"channel":"market_$base$quote_depth_step[0-2]","cb_id":"custom","asks":150,"bids":150}}
 ```
 * Return to subscription status once:
-```
+```javascript
 {"event_rep":"subed","channel":"market_$base$quote_depth_step[0-2]","cb_id":"Please Return by the Way You Came","asks":150,"bids":150,"ts":1506584998239,"status":"ok"}
 ```
 
 * Note: The first successful subscription will immediately return a full amount of data, and the server will regularly push a full amount of data to the front-end to avoid data problems
 
 * Full quantity: the front end directly replaces the original disk outlet
-```
+```javascript
 {
     "channel":"market_$base$quote_depth_step[0-2]",//$base$quoteExpressbtckrwetc.,Depth has three dimensions，0、1、2
     "ts":1506584998239,//Request time
@@ -1199,7 +1199,7 @@ Return value:
 * Note: The front end of incremental inventory information only needs to replace the quantity corresponding to the price， volume=Delete at 0 o'clock， priceWith the original opening of a price segment price Equal-time updatevolume,  Direct addition of new price
 
 * Direct addition of new price
-```
+```javascript
 {
     "channel":"market_$base$quote_depth_step[0-2]",//$base$quoteExpressbtckrwetc.,Depth has 3 dimensions，0、1、2
     "ts":1506584998239,//Request time
@@ -1215,15 +1215,15 @@ Return value:
 ###  <span id="22">Subscription - Deep Port</span>
 
 * request:
-```
+```javascript
 {"event":"sub","params":{"channel":"market_$base$quote_depth_step[0-2]","cb_id":"custom","asks":150,"bids":150}}
 ```
 * Return to subscription status once:
-```
+```javascript
 {"event_rep":"subed","channel":"market_$base$quote_depth_step[0-2]","cb_id":"Please Return by the Way You Came","asks":150,"bids":150,"ts":1506584998239,"status":"ok"}
 ```
 * Continue to return subscription messages:
-```
+```javascript
 {
     "channel":"market_$base$quote_depth_step[0-2]",//$base$quoteRepresents btckrw, etc.,Depth has 3 dimensions，0、1、2
     "ts":1506584998239,//Request time
@@ -1243,15 +1243,15 @@ Return value:
 ### <span id="23">Subscription-Real-time Transaction Information </span>
 
 * request:
-```
+```javascript
 {"event":"sub","params":{"channel":"market_$base$quote_trade_ticker","cb_id":"custom"}}
 ```
 * Return to subscription status once:
-```
+```javascript
 {"event_rep":"subed","channel":"market_$base$quote_trade_ticker","cb_id":"Please Return by the Way You Came","ts":1506584998239,"status":"ok"}
 ```
 * Continue to return subscription messages:
-```
+```javascript
 {
     "channel":"market_$base$quote_trade_ticker",//Subscription transactions versus market$base$quoteExpressbtckrwetc.
     "ts":1506584998239,//Request time
@@ -1289,11 +1289,11 @@ Return value:
 * Increase request parameters endIdx，pageSize（Up to 300, default 300 data）,If endIdx is empty, the last 300 historical data are returned
 
 * request:
-```
+```javascript
 {"event":"req","params":{"channel":"market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]","cb_id":"custom","since":"1506602880"}}//since The default is to return the latest 300, a return value greater than since for up to 1 hours of data, since has strong check, not earlier than the current 1 hours to 59 since```
 * Return a historical data:
 ```
-```
+```javascript
 {
     "event_rep":"rep","channel":"market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]","cb_id":"Please Return by the Way You Came",
     "since":"1506602880",//since Return the latest 300 items by default, return the maximum 1 hour data larger than since when it has value, and since has strong check, not earlier than the current 1 hour.
@@ -1326,11 +1326,11 @@ Return value:
 ### <span id="25">Request-transaction history data </span>
 
 * request:
-```
+```javascript
 {"event":"req","params":{"channel":"market_$base$quote_trade_ticker","cb_id":"custom","top":200}}
 ```
 * Direct return of transaction information:
-```
+```javascript
 {
     "event_rep":"rep","channel":"market_$base$quote_trade_ticker","cb_id":"Please Return by the Way You Came","ts":1506584998239,"status":"ok",
     "top":200,//Maximum support 200
@@ -1359,11 +1359,11 @@ Return value:
 ### <span id="26">Request - 24 Market Data on Home Page-</span>
 
 * Request mode:
-```
+```javascript
 {"event":"req","params":{"channel":"review"}}
 ```
 * Return an example of data:
-```
+```javascript
 {
    event_rep: "rep",
    channel: "review",
@@ -1380,7 +1380,7 @@ Return value:
 ## <span id="open-api-java">open-api Demo（java） </span>
 
 
-```
+```java
 
 package com.exchange.stats.action;
 
@@ -1554,7 +1554,7 @@ public class Main {
 ## <span id="ws-api-java">ws-api Demo (java) </span>
 
 
-```
+```java
 
 package test;
 

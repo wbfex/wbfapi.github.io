@@ -472,7 +472,7 @@ body {
     @extend %header-font;
     font-size: 14px;
     margin-bottom: $h1-margin-bottom;
-    margin-top: 2em;
+    margin-top: 20px;
     height:40px;
     line-height: 40px;
   }
@@ -486,10 +486,8 @@ body {
   h2 {
     @extend %header-font;
     font-size: 14px;
-    margin-top: 4em;
     margin-bottom: 0;
-    padding-top: 1.2em;
-    padding-bottom: 1.2em;
+    padding-bottom: 20px;
     color:#272E30;
     background-image: linear-gradient(
       to bottom,
@@ -500,20 +498,19 @@ body {
 
   // h2s right after h1s should bump right up
   // against the h1s.
-  h1 + h2,
-  h1 + div + h2 {
-    margin-top: $h1-margin-bottom * -1;
-    border-top: none;
-  }
+  // h1 + h2,
+  // h1 + div + h2 {
+  //   margin-top: $h1-margin-bottom * -1;
+  //   border-top: none;
+  // }
 
   h3,
   h4,
   h5,
   h6 {
     @extend %header-font;
-    font-size: 15px;
-    margin-top: 2.5em;
-    margin-bottom: 0.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   h4,
@@ -550,9 +547,11 @@ body {
     td {
       padding: 10px;
     }
-
+    tr{
+      border-bottom:1px solid #ccc;
+    }
     tr:last-child {
-      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
     }
 
     tr:nth-child(odd) > td {

@@ -74,13 +74,14 @@ body {
         line-height: 48px;
         margin: 0 15px;
         color:#828EA1;
+        border-bottom: 1px solid transparent;
         &:hover{
           color:#EDF4F8;
         }
       }
       .active{
         color:#EDF4F8;
-        border-bottom: 1px solid #09AEB0;
+        border-bottom: 2px solid #09AEB0;
       }
     }
   }

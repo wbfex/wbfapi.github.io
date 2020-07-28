@@ -58,6 +58,12 @@ under the License.
   <body class="<%= page_classes %>" data-languages="<%=h language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>">
     <div class="header">
       <%= image_tag "logo.png", class:'logo' %>
+      <div class="tabs">
+        <ul>
+          <li class="<%= current_page.data.spot_goods_active %>"><%= current_page.data.spot_goods %></li>
+          <li><%= current_page.data.contract %></li>
+        </ul>
+      </div>
       <div class="lang">
         <span><%= current_page.data.language %></span>
         <%= image_tag "down.png", class:'down'%>

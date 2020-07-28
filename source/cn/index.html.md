@@ -22,6 +22,14 @@ other_active:
 
 menu: 菜单
 
+spot_goods: 现货
+
+spot_goods_active: active
+
+contract: 永续合约
+
+contract_active: active
+
 searchText: 搜索
 
 search: true
@@ -1092,7 +1100,7 @@ REST API
 {"event_rep":"subed","channel":"market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]","cb_id":"原路返回","ts":1506584998239,"status":"ok"}
 ```javascript
 * 持续返回订阅消息:
-```javascript
+```
 {
     "channel":"market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]",//订阅的交易对行情$base$quote表示btckrw等
     "ts":1506584998239,//请求时间
@@ -1122,7 +1130,7 @@ REST API
 
 ```javascript
 * 持续返回订阅消息:
-```javascript
+```
 {
     "channel":"market_$base$quote_ticker",//订阅的交易对行情$base$quote表示btckrw等
     "ts":1506584998239,//请求时间

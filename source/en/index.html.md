@@ -22,6 +22,14 @@ other_active:
 
 menu: Menu
 
+spot_goods: Exchange 
+
+spot_goods_active: active
+
+contract: Contract
+
+contract_active: active
+
 searchText: Search
 
 search: true

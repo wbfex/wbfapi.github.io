@@ -22,6 +22,8 @@ other_active:
 
 menu: Menu
 
+create_api: Create API Key
+
 spot_goods: Exchange 
 
 spot_goods_active: active
@@ -1752,3 +1754,4 @@ public class WsTest {
 }
 
 ```
+

@@ -22,6 +22,8 @@ other_active:
 
 menu: 菜单
 
+create_api: 创建 API Key
+
 spot_goods: 现货
 
 spot_goods_active: active

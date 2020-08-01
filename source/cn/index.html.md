@@ -110,7 +110,49 @@ WebSocket是HTML5一种新的协议（Protocol）。它实现了客户端与服�
 
 API 请求在通过 internet 传输的过程中极有可能被篡改，为了确保请求未被更改，除公共接口（基础信息，行情数据）外的私有接口均必须使用您的 API Key 做签名认证，以校验参数或参数值在传输途中是否发生了更改。
 
-**签名步骤**
+**签名步骤(推荐)**
+    
+1、请求方法（GET 或 POST），后面添加换行符 “\n”
+
+例如： `GET\n`
+
+2、访问域名，后面添加换行符 "\n"
+
+例如：`openapi.wbf.live\n`
+
+3、访问接口路径，后面添加换行符 "\n"
+
+例如：`/open/api/create_order\n`
+
+4、将接口参数以其参数名的字典序升序进行排序并使用字符 "&" 连接
+例如：
+
+`api_key=b80609d133fd8baa0999f232c7d24331&price=17&side=BUY&symbol=abcusdt&time=1596253598000&type=1&volume=10`
+
+5、组成最终要进行签名的字符串
+例如：
+
+`GET\n`
+
+`openapi.wbf.live\n`
+
+`/open/api/create_order\n`
+
+`api_key=b80609d133fd8baa0999f232c7d24331&price=17&side=BUY&symbol=abcusdt&time=1596253598000&type=1&volume=10`
+
+6、用最终 “请求字符串” 和你的密钥 (Secret Key) 生成一个数字签名
+1. 将上一步得到的请求字符串和 API 私钥作为两个参数，调用HmacSHA256哈希函数来获得哈希值。
+2. 将此哈希值用base-64编码，得到的值作为此次接口调用的数字签名。
+   
+`89ADx5A3TLyMWVQj8Gqp+N6w+ivaA8I5Oi2SuYtKKYo=`
+
+7、将数字签名加入到请求参数中
+`sign=89ADx5A3TLyMWVQj8Gqp+N6w+ivaA8I5Oi2SuYtKKYo=`
+
+
+**签名步骤(向后兼容)**
+
+出于安全考虑，不建议使用该签名方法
 
 生成待签名的字符串
     -   [open-api Demo](#open-api-java)
@@ -119,17 +161,14 @@ API 请求在通过 internet 传输的过程中极有可能被篡改，为了确
 
 2、遍历排序后的字典，将所有参数按"keyvalue"格式拼接在一起（非空参数）
 
-3、使用MD5对待签名串求签
+例如：
+`api_key1234567time1596250406402type1`
+3、在上述参数字符串后面拼接上用户的Secret Key
+`api_key1234567time1596250406402type109d133fd8baa0999f232c7d24331`
 
-例：
+3、对上述字符串进行MD5得出签名字符串
 
-api_key = 1234567
-
-time = 12312312312137
-
-secret_key = Fky28uBcyzzu8
-
-sign=md5(api_key1234567time12312312312137Fky28uBcyzzu8)
+`sign = md5("api_key1234567time1596250406402type109d133fd8baa0999f232c7d24331")`
 
 
 # API接入说明
@@ -139,7 +178,16 @@ sign=md5(api_key1234567time12312312312137Fky28uBcyzzu8)
 - GET请求：所有的参数都在路径参数里
 - POST请求，所有参数以JSON格式发送在请求主体（body）里
 
-所有REST请求都必须包含以下Header：
+一个合法的请求由以下几部分组成：
+- 方法请求地址：即访问服务器地址。https://openapi.wbf.live/open/api/create_order
+- 必须和可选参数。
+
+  以下几个参数是所有需要验签接口必须要提供的：
+  - API key： 即用户申请的API Key中的Access Key。其字段名为api_key
+  - 请求时间：即发起请求的时间。其字段名字为time
+  - 签名：签名计算得出的值。其字段名字为sign
+
+所有请求都必须包含以下Header：
 
 - ACCESS-KEY API KEY作为一个字符串。
 - ACCESS-SIGN 使用base64编码签名（请参阅签名消息）。

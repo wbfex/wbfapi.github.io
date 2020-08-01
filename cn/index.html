@@ -531,7 +531,48 @@
 
 <p>API 请求在通过 internet 传输的过程中极有可能被篡改，为了确保请求未被更改，除公共接口（基础信息，行情数据）外的私有接口均必须使用您的 API Key 做签名认证，以校验参数或参数值在传输途中是否发生了更改。</p>
 
-<p><strong>签名步骤</strong></p>
+<p><strong>签名步骤(推荐)</strong></p>
+
+<p>1、请求方法（GET 或 POST），后面添加换行符 “\n”</p>
+
+<p>例如： <code>GET\n</code></p>
+
+<p>2、访问域名，后面添加换行符 &quot;\n&quot;</p>
+
+<p>例如：<code>openapi.wbf.live\n</code></p>
+
+<p>3、访问接口路径，后面添加换行符 &quot;\n&quot;</p>
+
+<p>例如：<code>/open/api/create_order\n</code></p>
+
+<p>4、将接口参数以其参数名的字典序升序进行排序并使用字符 &quot;&amp;&quot; 连接
+例如：</p>
+
+<p><code>api_key=b80609d133fd8baa0999f232c7d24331&amp;price=17&amp;side=BUY&amp;symbol=abcusdt&amp;time=1596253598000&amp;type=1&amp;volume=10</code></p>
+
+<p>5、组成最终要进行签名的字符串
+例如：</p>
+
+<p><code>GET\n</code></p>
+
+<p><code>openapi.wbf.live\n</code></p>
+
+<p><code>/open/api/create_order\n</code></p>
+
+<p><code>api_key=b80609d133fd8baa0999f232c7d24331&amp;price=17&amp;side=BUY&amp;symbol=abcusdt&amp;time=1596253598000&amp;type=1&amp;volume=10</code></p>
+
+<p>6、用最终 “请求字符串” 和你的密钥 (Secret Key) 生成一个数字签名
+1. 将上一步得到的请求字符串和 API 私钥作为两个参数，调用HmacSHA256哈希函数来获得哈希值。
+2. 将此哈希值用base-64编码，得到的值作为此次接口调用的数字签名。</p>
+
+<p><code>89ADx5A3TLyMWVQj8Gqp+N6w+ivaA8I5Oi2SuYtKKYo=</code></p>
+
+<p>7、将数字签名加入到请求参数中
+<code>sign=89ADx5A3TLyMWVQj8Gqp+N6w+ivaA8I5Oi2SuYtKKYo=</code></p>
+
+<p><strong>签名步骤(向后兼容)</strong></p>
+
+<p>出于安全考虑，不建议使用该签名方法</p>
 
 <p>生成待签名的字符串
     -   <a href="#open-api-java">open-api Demo</a></p>
@@ -540,23 +581,29 @@
 
 <p>2、遍历排序后的字典，将所有参数按&quot;keyvalue&quot;格式拼接在一起（非空参数）</p>
 
-<p>3、使用MD5对待签名串求签</p>
+<p>例如：
+<code>api_key1234567time1596250406402type1</code>
+3、在上述参数字符串后面拼接上用户的Secret Key
+<code>api_key1234567time1596250406402type109d133fd8baa0999f232c7d24331</code></p>
 
-<p>例：</p>
+<p>3、对上述字符串进行MD5得出签名字符串</p>
 
-<p>api_key = 1234567</p>
-
-<p>time = 12312312312137</p>
-
-<p>secret_key = Fky28uBcyzzu8</p>
-
-<p>sign=md5(api_key1234567time12312312312137Fky28uBcyzzu8)</p>
+<p><code>sign = md5(&quot;api_key1234567time1596250406402type109d133fd8baa0999f232c7d24331&quot;)</code></p>
 <h1 id='api'>API接入说明</h1><h2 id='5b7654a66a'><span id="a3">请求格式</span></h2>
 <p>所有的API请求都是restful，目前只有两种方法：GET和POST。
 - GET请求：所有的参数都在路径参数里
 - POST请求，所有参数以JSON格式发送在请求主体（body）里</p>
 
-<p>所有REST请求都必须包含以下Header：</p>
+<p>一个合法的请求由以下几部分组成：
+- 方法请求地址：即访问服务器地址。https://openapi.wbf.live/open/api/create_order
+- 必须和可选参数。</p>
+
+<p>以下几个参数是所有需要验签接口必须要提供的：
+  - API key： 即用户申请的API Key中的Access Key。其字段名为api_key
+  - 请求时间：即发起请求的时间。其字段名字为time
+  - 签名：签名计算得出的值。其字段名字为sign</p>
+
+<p>所有请求都必须包含以下Header：</p>
 
 <ul>
 <li>ACCESS-KEY API KEY作为一个字符串。</li>

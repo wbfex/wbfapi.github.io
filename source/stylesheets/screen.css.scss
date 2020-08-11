@@ -149,6 +149,12 @@ body {
   }
 }
 .toc-list-h1 {
+  >li>a.active{
+    background-color: $nav-active-parent-bg;
+  }
+  >li>ul>li .active{
+    background-color: $nav-active-parent-bg;
+  }
   .create_api{
     width: $nav-width;
     list-style: none;
@@ -299,7 +305,7 @@ body {
 
   // this is parent links of the currently selected ToC entry
   .toc-link.active-parent {
-    background-color: $nav-active-parent-bg;
+    // background-color: $nav-active-parent-bg;
     color: $nav-active-parent-text;
   }
 
@@ -518,7 +524,7 @@ body {
     @extend %header-font;
     font-size: 14px;
     margin-bottom: $h1-margin-bottom;
-    margin-top: 20px;
+    margin-top: 40px;
     height:40px;
     line-height: 40px;
   }
@@ -802,11 +808,12 @@ body {
 
 .highlight .c,
 .highlight .cm,
-.highlight .c1,
 .highlight .cs {
   color: #909090;
 }
-
+.highlight .c1{
+  color:#A5A5A5;
+}
 .highlight,
 .highlight .w {
   background-color: $code-bg;

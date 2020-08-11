@@ -306,9 +306,9 @@ REST API
 ### HTTP请求: 
 - GET /open/api/user/account
 
-```
-Response:
-```
+
+> 响应 
+
 ```json
 {
     "code": "0",
@@ -364,9 +364,8 @@ Response:
 
 
 
-```
-Response:
-```
+> 响应
+
 ```json
 {
     "code": "0",
@@ -427,9 +426,9 @@ Response:
 ### HTTP请求: 
 - GET /open/api/all_trade
 
-```
-Response:
-```
+
+> 响应
+
 ```json
 {
     "code": "0",
@@ -550,9 +549,8 @@ Response:
 |  sign  | 必填 | 签名 |                                                                     
 
 
-```
-Response:
-```
+> 响应
+
 ```json
 {
     "code": "0",
@@ -590,9 +588,8 @@ Response:
 * mass_place是需要发送到系统的一批限价订单，每次最多100条
 * mass_cancel是需要撤回的一批订单,每次最多100条
 
-```
-Response:
-```
+> 响应
+
 ```json
 {
     "code": "0",
@@ -648,9 +645,9 @@ Response:
 
 * mass_cancel是需要撤回的一批订单,每次最多1000条
 
-```
-Response:
-```
+
+> 响应
+
 ```json
 {
     "code": "0",
@@ -699,9 +696,8 @@ Response:
 
 * v2版本变化: 去掉了结果返回值中的tradeList成交记录,提升效率;如果需要单一订单的成交信息,可以使用 /open/api/order_info 接口
 
-```
-Response:
-```
+> 响应
+
 ```json
 {
     "code": "0",
@@ -759,9 +755,9 @@ Response:
 ### HTTP请求: 
 - GET /open/api/order_info
 
-```
-Response:
-```
+
+> 响应
+
 ```json
 {
     "code": "0",
@@ -834,9 +830,9 @@ curl https://openapi.wbf.live/open/api/get_allticker
 ### HTTP请求: 
 - GET /open/api/get_allticker
 
-```
-Response:
-```
+
+> 响应
+
 ```json
 {
     "code": "0",
@@ -893,9 +889,9 @@ curl https://openapi.wbf.live/open/api/get_records?symbol=btcusdt&period=15
 
 GET /open/api/get_records
 
-```
-Response:
-```
+
+> 响应
+
 ```json
 {
     "code": "0",
@@ -956,9 +952,7 @@ curl https://openapi.wbf.live/open/api/get_ticker?symbol=btcusdt
 ### HTTP请求:
 - GET /open/api/get_ticker
 
-```
-Response:
-```
+> 响应
 
 ```json
 {
@@ -1004,9 +998,7 @@ curl https://openapi.wbf.live/open/api/get_trades?symbol=btcusdt
 ### HTTP请求:
 - GET /open/api/get_trades
 
-```
-Response:
-```
+> 响应
 
 ```json
 {
@@ -1066,9 +1058,8 @@ curl https://openapi.wbf.live/open/api/market
 
 - GET /open/api/market
 
-```
-Response:
-```
+> 响应
+
 ```json
 {
     "code": "0",
@@ -1104,9 +1095,9 @@ curl https://openapi.wbf.live/open/api/market_dept?symbol=btcusdt&type=step0
 ### HTTP请求:
 - GET /open/api/market_dept
 
-```
-Response:
-```
+
+> 响应
+
 ```json
 {
     "code": "0",
@@ -1163,9 +1154,8 @@ curl https://openapi.wbf.live/open/api/common/symbols
 
 - GET /open/api/common/symbols
 
-```
-Response:
-```
+
+> 响应
 
 ```json
 {
@@ -1236,9 +1226,7 @@ WebSocket 行情接口返回的所有数据都进行了 GZIP 压缩，需要 cli
 {"pong": 1595935723334}
 `
 
-```
-订阅
-```
+> 订阅
 
 ```json
 {
@@ -1253,9 +1241,8 @@ WebSocket 行情接口返回的所有数据都进行了 GZIP 压缩，需要 cli
 
 当Websocket服务器连续3次发送了`ping`消息却没有收到任何一次`pong`消息返回后，服务器将主动断开与此客户端的连接。
 
-```
-订阅 response
-```
+
+> 订阅 响应
 
 ```json
 {
@@ -1282,9 +1269,7 @@ WebSocket 行情接口返回的所有数据都进行了 GZIP 压缩，需要 cli
 
 成功订阅后，Websocket客户端将收到确认。之后, 一旦所订阅的主题有更新，Websocket客户端将收到服务器推送的更新消息（push）
 
-```
-取消订阅
-```
+> 取消订阅
 
 ```json
 {
@@ -1324,9 +1309,7 @@ WebSocket 行情接口返回的所有数据都进行了 GZIP 压缩，需要 cli
 ### channel
 `market_$symbol_kline_$period`
 
-```
-订阅
-```
+> 订阅
 
 ```json
 {
@@ -1344,9 +1327,7 @@ WebSocket 行情接口返回的所有数据都进行了 GZIP 压缩，需要 cli
 | channel | string | 是  | 主题 |$symbol: 交易对名称<br>btcusdt,ethusdt ...</br> </br> <br>$period: K线周期</br> <br>1min,5min,15min,30min,60min,1day,1week,1month</br>|
 | cb_id | string | 是  | 自定义id      | |
 
-```
-response
-```
+> 响应
 
 ```json
 {
@@ -1382,9 +1363,7 @@ response
 ### channel
 `maket_$symbol_ticker`
 
-```
-订阅
-```
+> 订阅
 
 ```json
 {
@@ -1404,9 +1383,7 @@ response
 | cb_id | string | 是  | 自定义id      | |
 
 
-```
-response
-```
+> 响应
 
 ```json
 {
@@ -1445,9 +1422,7 @@ response
 ### channel
 `maket_$symbol_depth_$step`
 
-```
-订阅
-```
+> 订阅
 
 ```json
 {
@@ -1475,9 +1450,8 @@ response
 
 * 注：第一次订阅成功会立刻返回一次全量数据， 另外server也会定期推个全量数据给前端  避免数据出问题
 
-```
-全量盘口response
-```
+
+> 全量盘口响应
 
 ```json
 {
@@ -1505,9 +1479,8 @@ response
 | buys | 数组对象  | 买盘深度 |
 
 
-```
-增量盘口response
-```
+
+> 增量盘口响应
 
 ```json
 {
@@ -1537,9 +1510,8 @@ response
 ### channel
 `maket_$symbol_trade_ticker`
 
-```
-订阅
-```
+
+> 订阅
 
 ```json
 {
@@ -1558,9 +1530,7 @@ response
 | channel | string | 是  | 主题 |$symbol: 交易对名称<br>btcusdt,ethusdt ...</br>|
 | cb_id | string | 是  | 自定义id      | |
 
-```
-response
-```
+> 响应
 
 ```json
 {
@@ -1615,9 +1585,9 @@ response
 
 * 增加请求参数endIdx，pageSize（最多300，默认300条数据）,如果endIdx为空，则返回最近300条历史数据
 
-```
-订阅
-```
+
+> 订阅
+
 ```json
 {
     "event":"req",
@@ -1637,9 +1607,7 @@ response
 | cb_id | string | 是  | 自定义id      | |
 | since | long | 否 | 自定义id      | since缺省时返回最新300条，有值时返回大于since的最多1小时数据，since有强校验，不能早于当前1小时  since取到59|
 
-```
-response
-```
+> 响应
 
 ```json
 {
@@ -1688,9 +1656,8 @@ response
 ### channel
 `maket_$symbol_trade_ticker`
 
-```
-订阅
-```
+
+> 订阅
 
 ```json
 {
@@ -1710,9 +1677,7 @@ response
 | channel | string | 是  | 主题 |$symbol: 交易对名称<br>btcusdt,ethusdt ...</br>|
 | cb_id | string | 是  | 自定义id      | |
 
-```
-response
-```
+> 响应
 
 ```json
 {
@@ -1759,9 +1724,7 @@ response
 ### channel
 `review`
 
-```
-订阅
-```
+> 订阅
 
 ```json
 {"event":"req","params":{"channel":"review"}}
@@ -1772,9 +1735,8 @@ response
 | ---- | ------ | ---------- | ---- | ----- |
 | channel | string | 是  | 主题 | review|
 
-```
-response
-```
+> 响应
+
 ```json
 {
    "event_rep": "rep",

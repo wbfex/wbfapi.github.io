@@ -581,12 +581,12 @@
 
 <p>2、遍历排序后的字典，将所有参数按&quot;keyvalue&quot;格式拼接在一起（非空参数）</p>
 
-<p>例如：
-<code>api_key1234567time1596250406402type1</code>
-3、在上述参数字符串后面拼接上用户的Secret Key
+<p><code>api_key1234567time1596250406402type1</code></p>
+
+<p>3、在上述参数字符串后面拼接上用户的Secret Key
 <code>api_key1234567time1596250406402type109d133fd8baa0999f232c7d24331</code></p>
 
-<p>3、对上述字符串进行MD5得出签名字符串</p>
+<p>4、对上述字符串进行MD5得出签名字符串</p>
 
 <p><code>sign = md5(&quot;api_key1234567time1596250406402type109d133fd8baa0999f232c7d24331&quot;)</code></p>
 <h1 id='api'>API接入说明</h1><h2 id='5b7654a66a'><span id="a3">请求格式</span></h2>

@@ -61,7 +61,11 @@ under the License.
       <div class="tabs">
         <ul>
           <li class="<%= current_page.data.spot_goods_active %>"><%= current_page.data.spot_goods %></li>
-          <li><%= current_page.data.contract %></li>
+          <li>
+            <a href="<%= current_page.data.contract_url %>">
+              <%= current_page.data.contract %>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="lang">

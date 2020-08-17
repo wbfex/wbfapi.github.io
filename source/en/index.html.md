@@ -32,6 +32,8 @@ contract: Contract
 
 contract_active: active
 
+contract_url: 'https://doc.wbfutures.pro/index.html'
+
 searchText: Search
 
 search: true

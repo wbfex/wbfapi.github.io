@@ -32,6 +32,8 @@ contract: 永续合约
 
 contract_active: active
 
+contract_url: 'https://doc.wbfutures.pro/index.html'
+
 searchText: 搜索
 
 search: true

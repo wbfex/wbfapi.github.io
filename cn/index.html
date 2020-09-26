@@ -594,9 +594,12 @@
 
 <p><code>sign = md5(&quot;api_key1234567time1596250406402type109d133fd8baa0999f232c7d24331&quot;)</code></p>
 <h1 id='api'>API接入说明</h1><h2 id='5b7654a66a'><span id="a3">请求格式</span></h2>
-<p>所有的API请求都是restful，目前只有两种方法：GET和POST。
-- GET请求：所有的参数都在路径参数里
-- POST请求，所有参数以Form表单(application/x-www-form-urlencoded)发送在请求主体(body)里</p>
+<p>所有的API请求都是restful，目前只有两种方法：GET和POST。</p>
+
+<ul>
+<li>GET请求：所有的参数都在路径参数里</li>
+<li>POST请求，所有参数以Form表单 (application/x-www-form-urlencoded) 发送在请求主体(body)里</li>
+</ul>
 
 <p>一个合法的请求由以下几部分组成：
 - 方法请求地址：即访问服务器地址。https://openapi.wbf.live/open/api/create_order

@@ -433,26 +433,27 @@ REST API
 
 ```json
 {
-    "code": "0",
-    "msg": "suc",
-    "data": {
-        "count":22,
+    "code":"0",
+    "msg":"suc",
+    "data":{
+        "count":1000,
         "resultList":[
             {
-                "volume":"1.000",
-                "side":"BUY",
-                "feeCoin":"YLB",
-                "price":"0.10000000",
-                "fee":"0.16431104",
-                "ctime":1510996571195,
-                "deal_price":"0.10000000",
-                "id":306,
-                "type":"买入",
-                "bid_id":1001,
-                "ask_id":1002,
-                "bid_user_id":10001,
-                "ask_user_id":10001
-    
+                "side":"SELL",
+                "role":"taker",
+                "ask_user_id":10001,
+                "fee":"0.50000000",
+                "returnFeeStatus":false,
+                "deal_price":"5.00",
+                "type":"卖出",
+                "bid_id":10001,
+                "ask_id":10002,
+                "volume":"1",
+                "feeCoin":"USDT",
+                "price":"5.00000000",
+                "ctime":1608345691161,
+                "id":10001,
+                "bid_user_id":10001
             },
             ...
         ]

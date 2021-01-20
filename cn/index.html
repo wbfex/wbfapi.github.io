@@ -547,7 +547,7 @@
 
 <p>3、访问接口路径，后面添加换行符 &quot;\n&quot;</p>
 
-<p>例如：<code>/open/api/v2/create_order\n</code></p>
+<p>例如：<code>/open/api/create_order\n</code></p>
 
 <p>4、将接口参数以其参数名的字典序升序进行排序并使用字符 &quot;&amp;&quot; 连接
 例如：</p>
@@ -561,7 +561,7 @@
 
 <p><code>openapi.wbf.live\n</code></p>
 
-<p><code>/open/api/v2/create_order\n</code></p>
+<p><code>/open/api/create_order\n</code></p>
 
 <p><code>api_key=b80609d133fd8baa0999f232c7d24331&amp;price=17&amp;side=BUY&amp;symbol=abcusdt&amp;time=1596253598000&amp;type=1&amp;volume=10</code></p>
 
@@ -594,15 +594,12 @@
 
 <p><code>sign = md5(&quot;api_key1234567time1596250406402type109d133fd8baa0999f232c7d24331&quot;)</code></p>
 <h1 id='api'>API接入说明</h1><h2 id='5b7654a66a'><span id="a3">请求格式</span></h2>
-<p>所有的API请求都是restful，目前只有两种方法：GET和POST。</p>
-
-<ul>
-<li>GET请求：所有的参数都在路径参数里</li>
-<li>POST请求，所有参数以Form表单(application/x-www-form-urlencoded)发送在请求主体(body)里</li>
-</ul>
+<p>所有的API请求都是restful，目前只有两种方法：GET和POST。
+- GET请求：所有的参数都在路径参数里
+- POST请求，所有参数以JSON格式发送在请求主体（body）里</p>
 
 <p>一个合法的请求由以下几部分组成：
-- 方法请求地址：即访问服务器地址。https://openapi.wbf.live/open/api/v2/create_order
+- 方法请求地址：即访问服务器地址。https://openapi.wbf.live/open/api/create_order
 - 必须和可选参数。</p>
 
 <p>以下几个参数是所有需要验签接口必须要提供的：
@@ -1051,26 +1048,27 @@
 <p>响应</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"suc"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"count"</span><span class="p">:</span><span class="mi">22</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"msg"</span><span class="p">:</span><span class="s2">"suc"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"count"</span><span class="p">:</span><span class="mi">1000</span><span class="p">,</span><span class="w">
         </span><span class="nl">"resultList"</span><span class="p">:[</span><span class="w">
             </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"volume"</span><span class="p">:</span><span class="s2">"1.000"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"side"</span><span class="p">:</span><span class="s2">"BUY"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"feeCoin"</span><span class="p">:</span><span class="s2">"YLB"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"fee"</span><span class="p">:</span><span class="s2">"0.16431104"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"ctime"</span><span class="p">:</span><span class="mi">1510996571195</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"deal_price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">306</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"买入"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"bid_id"</span><span class="p">:</span><span class="mi">1001</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"ask_id"</span><span class="p">:</span><span class="mi">1002</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"bid_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"ask_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="w">
-
+                </span><span class="nl">"side"</span><span class="p">:</span><span class="s2">"SELL"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"role"</span><span class="p">:</span><span class="s2">"taker"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"ask_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"fee"</span><span class="p">:</span><span class="s2">"0.50000000"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"returnFeeStatus"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"deal_price"</span><span class="p">:</span><span class="s2">"5.00"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"卖出"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"bid_id"</span><span class="p">:</span><span class="mi">10001</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"ask_id"</span><span class="p">:</span><span class="mi">10002</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"volume"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"feeCoin"</span><span class="p">:</span><span class="s2">"USDT"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"price"</span><span class="p">:</span><span class="s2">"5.00000000"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"ctime"</span><span class="p">:</span><span class="mi">1608345691161</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">10001</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"bid_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="err">...</span><span class="w">
         </span><span class="p">]</span><span class="w">
@@ -1281,7 +1279,7 @@
 <p>创建订单</p>
 <h3 id='http-6'>HTTP请求:</h3>
 <ul>
-<li>POST /open/api/v2/create_order</li>
+<li>POST /open/api/create_order</li>
 </ul>
 <h3 id='1f9ac54b15-6'>请求参数</h3>
 <table><thead>

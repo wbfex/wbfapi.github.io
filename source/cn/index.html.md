@@ -737,7 +737,7 @@ REST API
 
 | 参数     | 填写类型  | 说明                          |
 | -------- | --------- | ----------------------------- |
-| symbo    | 必填      | 交易对，btcusdt |
+| symbol    | 必填      | 交易对，btcusdt |
 | pageSize | 选填      | 页面大小                      |
 | page     | 选填      | 页码                          |
 | api_key  | 必填      | api_key                       |

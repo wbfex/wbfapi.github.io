@@ -484,7 +484,7 @@
 <h1 id='9e033de16f'>快速开始</h1><h2 id='c1ae0a8486'>接入准备</h2>
 <p>如需使用API，请先登录网页端，通过【用户中心】-【API】创建一个API key，再据此文档详情进行开发和交易。</p>
 
-<p>您可以点击 <a href="https://www.wbf.live/personal/apiManagement">这里</a> 创建 API Key。</p>
+<p>您可以点击 <a href="https://www.wbfex.live/personal/apiManagement">这里</a> 创建 API Key。</p>
 
 <p>每个用户可创建5组API Key，每组API key可以绑定5个不同的IP地址。API key一旦绑定了IP地址，则只能从绑定的IP地址使用该API key调用API接口。出于安全考虑，强烈建议您为API key绑定相应的IP地址。</p>
 
@@ -523,11 +523,11 @@
 <h2 id='urls'>接入URLs</h2>
 <p><strong>REST API</strong></p>
 
-<p><code>https://openapi.wbf.live</code></p>
+<p><code>https://openapi.wbfex.live</code></p>
 
 <p><strong>WebSocket</strong></p>
 
-<p><code>wss://ws.wbf.live/kline-api/ws</code></p>
+<p><code>wss://ws.wbfex.live/kline-api/ws</code></p>
 
 <p>为保证API服务的稳定性，建议使用日本AWS云服务器进行访问。如使用中国大陆境内的客户端服务器，连接的稳定性将难以保证。</p>
 <h2 id='586f3bcbf4'><span id="a4">签名认证</span></h2>
@@ -543,7 +543,7 @@
 
 <p>2、访问域名，后面添加换行符 &quot;\n&quot;</p>
 
-<p>例如：<code>openapi.wbf.live\n</code></p>
+<p>例如：<code>openapi.wbfex.live\n</code></p>
 
 <p>3、访问接口路径，后面添加换行符 &quot;\n&quot;</p>
 
@@ -559,7 +559,7 @@
 
 <p><code>GET\n</code></p>
 
-<p><code>openapi.wbf.live\n</code></p>
+<p><code>openapi.wbfex.live\n</code></p>
 
 <p><code>/open/api/create_order\n</code></p>
 
@@ -599,7 +599,7 @@
 - POST请求，所有参数以JSON格式发送在请求主体（body）里</p>
 
 <p>一个合法的请求由以下几部分组成：
-- 方法请求地址：即访问服务器地址。https://openapi.wbf.live/open/api/create_order
+- 方法请求地址：即访问服务器地址。https://openapi.wbfex.live/open/api/create_order
 - 必须和可选参数。</p>
 
 <p>以下几个参数是所有需要验签接口必须要提供的：
@@ -1790,7 +1790,7 @@
 </tbody></table>
 <h1 id='43ee760de5'>行情相关</h1><h2 id='4c9de00a78'><span id="7">获取所有交易对行情</span></h2>
 <p>获取所有交易对行情</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/get_allticker
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/get_allticker
 </code></pre></div><h3 id='http-11'>HTTP请求:</h3>
 <ul>
 <li>GET /open/api/get_allticker</li>
@@ -1860,7 +1860,7 @@
 </tbody></table>
 <h2 id='k'><span id="8">获取K线数据</span></h2>
 <p>获取K线数据</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/get_records?symbol=btcusdt&amp;period=15
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/get_records?symbol=btcusdt&amp;period=15
 </code></pre></div><h3 id='http-12'>HTTP请求:</h3>
 <p>GET /open/api/get_records</p>
 
@@ -1947,7 +1947,7 @@
 </tbody></table>
 <h2 id='32d30f799b'><span id="9">获取当前行情</span></h2>
 <p>获取当前行情</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/get_ticker?symbol=btcusdt
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/get_ticker?symbol=btcusdt
 </code></pre></div><h3 id='http-13'>HTTP请求:</h3>
 <ul>
 <li>GET /open/api/get_ticker</li>
@@ -2014,7 +2014,7 @@
 </tbody></table>
 <h2 id='d260ccba65'><span id="10">获取行情成交记录</span></h2>
 <p>获取交易对的实时成交记录(最大返回200条最新成交记录)</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/get_trades?symbol=btcusdt
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/get_trades?symbol=btcusdt
 </code></pre></div><h3 id='http-14'>HTTP请求:</h3>
 <ul>
 <li>GET /open/api/get_trades</li>
@@ -2095,7 +2095,7 @@
 </tbody></table>
 <h2 id='e592a0b8d9'><span id="11">获取各个币对的最新成交价</span></h2>
 <p>获取各个币对的最新成交价</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/market
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/market
 </code></pre></div><h3 id='http-15'>HTTP请求:</h3>
 <ul>
 <li>GET /open/api/market</li>
@@ -2144,7 +2144,7 @@
 </tbody></table>
 <h2 id='b9fa6c9f9f'><span id="12">查询买卖盘深度</span></h2>
 <p>查询买卖盘深度</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/market_dept?symbol=btcusdt&amp;type=step0
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/market_dept?symbol=btcusdt&amp;type=step0
 </code></pre></div><h3 id='http-16'>HTTP请求:</h3>
 <ul>
 <li>GET /open/api/market_dept</li>
@@ -2227,7 +2227,7 @@
 </tbody></table>
 <h2 id='140f5e499a'><span id="17">查询系统支持的所有交易对及精度</span></h2>
 <p>查询系统支持的所有交易对及精度</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/common/symbols
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/common/symbols
 </code></pre></div><h3 id='http-17'>HTTP请求:</h3>
 <ul>
 <li>GET /open/api/common/symbols</li>
@@ -2294,7 +2294,7 @@
 </tbody></table>
 <h1 id='websocket'>Websocket行情数据</h1><h2 id='5ea2e0cde2'>简介</h2><h3 id='url'>接入URL</h3>
 <p><code>
-wss://ws.wbf.live/kline-api/ws
+wss://ws.wbfex.live/kline-api/ws
 </code></p>
 <h3 id='7ee1785123'>数据压缩</h3>
 <p>WebSocket 行情接口返回的所有数据都进行了 GZIP 压缩，需要 client 在收到数据之后解压。</p>
@@ -3377,7 +3377,7 @@ wss://ws.wbf.live/kline-api/ws
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">try</span> <span class="o">{</span>
 <span class="c1">//wsurl </span>
-            <span class="nc">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">"wss://ws.wbf.live/kline-api/ws"</span><span class="o">;</span>
+            <span class="nc">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">"wss://ws.wbfex.live/kline-api/ws"</span><span class="o">;</span>
 <span class="c1">//历史数据请求参数 </span>
             <span class="nc">String</span> <span class="n">reqParam</span> <span class="o">=</span> <span class="s">"{"</span><span class="n">event</span><span class="s">":"</span><span class="n">req</span><span class="s">","</span><span class="n">params</span><span class="s">":{"</span><span class="n">channel</span><span class="s">":"</span><span class="n">market_btcusdt_trade_ticker</span><span class="s">","</span><span class="n">cb_id</span><span class="s">":"</span><span class="n">btcusdt</span><span class="s">","</span><span class="n">top</span><span class="s">":150}}"</span><span class="o">;</span>
 <span class="c1">//订阅参数 </span>

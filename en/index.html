@@ -484,7 +484,7 @@
 <h1 id='quick-start'>Quick Start</h1><h2 id='access-preparation'>Access Preparation</h2>
 <p>To use API, please log into the webpage first, create an API key through [User Center] - [API], and then develop and trade according to the details of this documentation.</p>
 
-<p>You can click <a href="https://www.wbf.live/personal/apiManagement">here</a> to create an API Key.</p>
+<p>You can click <a href="https://www.wbfex.live/personal/apiManagement">here</a> to create an API Key.</p>
 
 <p>Each user can create 5 groups of API Keys, and each group of API Keys can bind 5 different IP addresses. Once an API key binds an address, the API interface can only be called by using the API key from the bound IP address. For security reasons, it is strongly recommended that you bind the corresponding IP address for API key.</p>
 
@@ -523,11 +523,11 @@
 <h2 id='access-urls'>Access URLs</h2>
 <p><strong>REST API</strong></p>
 
-<p><code>https://openapi.wbf.live</code></p>
+<p><code>https://openapi.wbfex.live</code></p>
 
 <p><strong>WebSocket</strong></p>
 
-<p><code>wss://ws.wbf.live/kline-api/ws</code></p>
+<p><code>wss://ws.wbfex.live/kline-api/ws</code></p>
 
 <p>To ensure the stability of API service, it is recommended to access using Japanese AWS cloud server. If the client server in Chinese mainland is used, it would be difficult to guarantee the stability of the connection.</p>
 <h2 id='signature-authentication'><span id="a4">Signature Authentication</span></h2>
@@ -543,7 +543,7 @@
 
 <p>2、Visit the domain name, followed by a line break &quot;\n&quot;</p>
 
-<p>Example：<code>openapi.wbf.live\n</code></p>
+<p>Example：<code>openapi.wbfex.live\n</code></p>
 
 <p>3、Access interface path, followed by a line break &quot;\n&quot;</p>
 
@@ -559,7 +559,7 @@ Example：</p>
 
 <p><code>GET\n</code></p>
 
-<p><code>openapi.wbf.live\n</code></p>
+<p><code>openapi.wbfex.live\n</code></p>
 
 <p><code>/open/api/create_order\n</code></p>
 
@@ -600,7 +600,7 @@ Example：</p>
 - POST request: all parameters are sent in JSON format to request body.</p>
 
 <p>A licit request consists of the following parts：
-- method request address: i.e. the access server address.https://openapi.wbf.live/open/api/create_order
+- method request address: i.e. the access server address.https://openapi.wbfex.live/open/api/create_order
 - required and optional parameters.</p>
 
 <p>The following parameters must be provided for all interfaces requiring signature authentication:
@@ -1791,7 +1791,7 @@ Example：</p>
 </tbody></table>
 <h1 id='tickers-related'>Tickers Related</h1><h2 id='get-all-symbol-tickers'><span id="7">Get all symbol tickers</span></h2>
 <p>Get all symbol tickers</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/get_allticker
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/get_allticker
 </code></pre></div><h3 id='http-request-11'>HTTP Request:</h3>
 <ul>
 <li>GET /open/api/get_allticker</li>
@@ -1861,7 +1861,7 @@ Example：</p>
 </tbody></table>
 <h2 id='get-k-line-data'><span id="8">Get K-line data</span></h2>
 <p>Get K-line data</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/get_records?symbol=btcusdt&amp;period=15
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/get_records?symbol=btcusdt&amp;period=15
 </code></pre></div><h3 id='http-request-12'>HTTP Request:</h3>
 <p>GET /open/api/get_records</p>
 
@@ -1948,7 +1948,7 @@ Example：</p>
 </tbody></table>
 <h2 id='get-current-tickers'><span id="9">Get current tickers</span></h2>
 <p>Get current tickers</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/get_ticker?symbol=btcusdt
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/get_ticker?symbol=btcusdt
 </code></pre></div><h3 id='http-request-13'>HTTP Request:</h3>
 <ul>
 <li>GET /open/api/get_ticker</li>
@@ -2015,7 +2015,7 @@ Example：</p>
 </tbody></table>
 <h2 id='get-trading-records'><span id="10">Get trading records</span></h2>
 <p>Get the real-time trading records of symbols (up to 200 latest trading records are returned)</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/get_trades?symbol=btcusdt
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/get_trades?symbol=btcusdt
 </code></pre></div><h3 id='http-request-14'>HTTP Request:</h3>
 <ul>
 <li>GET /open/api/get_trades</li>
@@ -2096,7 +2096,7 @@ Example：</p>
 </tbody></table>
 <h2 id='get-the-latest-strike-price-of-each-token-pair'><span id="11">Get the latest strike price of each token pair</span></h2>
 <p>Get the latest strike price of each token pair</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/market
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/market
 </code></pre></div><h3 id='http-request-15'>HTTP Request:</h3>
 <ul>
 <li>GET /open/api/market</li>
@@ -2145,7 +2145,7 @@ Example：</p>
 </tbody></table>
 <h2 id='query-asks-depth'><span id="12">Query asks depth</span></h2>
 <p>Query asks depth</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/market_dept?symbol=btcusdt&amp;type=step0
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/market_dept?symbol=btcusdt&amp;type=step0
 </code></pre></div><h3 id='http-request-16'>HTTP Request:</h3>
 <ul>
 <li>GET /open/api/market_dept</li>
@@ -2228,7 +2228,7 @@ Example：</p>
 </tbody></table>
 <h2 id='query-all-symbols-supported-by-the-system'><span id="17">Query all symbols supported by the system</span></h2>
 <p>Query all symbols supported by the system</p>
-<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbf.live/open/api/common/symbols
+<div class="highlight"><pre class="highlight plaintext"><code>curl https://openapi.wbfex.live/open/api/common/symbols
 </code></pre></div><h3 id='http-request-17'>HTTP Request:</h3>
 <ul>
 <li>GET /open/api/common/symbols</li>
@@ -2295,7 +2295,7 @@ Example：</p>
 </tbody></table>
 <h1 id='websocket-ticker-data'>Websocket Ticker Data</h1><h2 id='introduction-2'>Introduction</h2><h3 id='access-url'>Access URL</h3>
 <p><code>
-wss://ws.wbf.live/kline-api/ws
+wss://ws.wbfex.live/kline-api/ws
 </code></p>
 <h3 id='data-compression'>Data Compression</h3>
 <p>All the data returned by WebSocket ticker interface are compressed by GZIP, which requires the client to decompress the data after receiving it.</p>
@@ -3378,7 +3378,7 @@ wss://ws.wbf.live/kline-api/ws
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">try</span> <span class="o">{</span>
 <span class="c1">//wsurl </span>
-            <span class="nc">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">"wss://ws.wbf.live/kline-api/ws"</span><span class="o">;</span>
+            <span class="nc">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">"wss://ws.wbfex.live/kline-api/ws"</span><span class="o">;</span>
 <span class="c1">//历史数据请求参数 </span>
             <span class="nc">String</span> <span class="n">reqParam</span> <span class="o">=</span> <span class="s">"{"</span><span class="n">event</span><span class="s">":"</span><span class="n">req</span><span class="s">","</span><span class="n">params</span><span class="s">":{"</span><span class="n">channel</span><span class="s">":"</span><span class="n">market_btcusdt_trade_ticker</span><span class="s">","</span><span class="n">cb_id</span><span class="s">":"</span><span class="n">btcusdt</span><span class="s">","</span><span class="n">top</span><span class="s">":150}}"</span><span class="o">;</span>
 <span class="c1">//订阅参数 </span>

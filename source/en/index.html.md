@@ -57,7 +57,7 @@ On the right side of the documentation are examples of request parameters and re
 ## Access Preparation
 To use API, please log into the webpage first, create an API key through [User Center] - [API], and then develop and trade according to the details of this documentation.
 
-You can click [here](https://www.wbf.live/personal/apiManagement) to create an API Key.
+You can click [here](https://www.wbfex.live/personal/apiManagement) to create an API Key.
 
 Each user can create 5 groups of API Keys, and each group of API Keys can bind 5 different IP addresses. Once an API key binds an address, the API interface can only be called by using the API key from the bound IP address. For security reasons, it is strongly recommended that you bind the corresponding IP address for API key.
 
@@ -97,11 +97,11 @@ Private interface can be used for trading management and account management. Eve
 
 **REST API**
 
-`https://openapi.wbf.live`
+`https://openapi.wbfex.live`
 
 **WebSocket**
 
-`wss://ws.wbf.live/kline-api/ws`
+`wss://ws.wbfex.live/kline-api/ws`
 
 To ensure the stability of API service, it is recommended to access using Japanese AWS cloud server. If the client server in Chinese mainland is used, it would be difficult to guarantee the stability of the connection.
 
@@ -120,7 +120,7 @@ Example: `GET\n`
 
 2、Visit the domain name, followed by a line break "\n"
 
-Example：`openapi.wbf.live\n`
+Example：`openapi.wbfex.live\n`
 
 3、Access interface path, followed by a line break "\n"
 
@@ -136,7 +136,7 @@ Example：
 
 `GET\n`
 
-`openapi.wbf.live\n`
+`openapi.wbfex.live\n`
 
 `/open/api/create_order\n`
 
@@ -182,7 +182,7 @@ All API requests are restful, and there are only two methods at present: GET and
 - POST request: all parameters are sent in JSON format to request body.
 
 A licit request consists of the following parts：
-- method request address: i.e. the access server address.https://openapi.wbf.live/open/api/create_order
+- method request address: i.e. the access server address.https://openapi.wbfex.live/open/api/create_order
 - required and optional parameters.
 
   The following parameters must be provided for all interfaces requiring signature authentication:
@@ -829,7 +829,7 @@ Get order details
 Get all symbol tickers
 
 ```
-curl https://openapi.wbf.live/open/api/get_allticker
+curl https://openapi.wbfex.live/open/api/get_allticker
 ```
 ### HTTP Request: 
 - GET /open/api/get_allticker
@@ -886,7 +886,7 @@ curl https://openapi.wbf.live/open/api/get_allticker
 Get K-line data
 
 ```
-curl https://openapi.wbf.live/open/api/get_records?symbol=btcusdt&period=15
+curl https://openapi.wbfex.live/open/api/get_records?symbol=btcusdt&period=15
 ```
 
 ### HTTP Request:
@@ -950,7 +950,7 @@ GET /open/api/get_records
 Get current tickers
 
 ```
-curl https://openapi.wbf.live/open/api/get_ticker?symbol=btcusdt
+curl https://openapi.wbfex.live/open/api/get_ticker?symbol=btcusdt
 ```
 
 ### HTTP Request:
@@ -996,7 +996,7 @@ curl https://openapi.wbf.live/open/api/get_ticker?symbol=btcusdt
 Get the real-time trading records of symbols (up to 200 latest trading records are returned)
 
 ```
-curl https://openapi.wbf.live/open/api/get_trades?symbol=btcusdt
+curl https://openapi.wbfex.live/open/api/get_trades?symbol=btcusdt
 ```
 
 ### HTTP Request:
@@ -1055,7 +1055,7 @@ curl https://openapi.wbf.live/open/api/get_trades?symbol=btcusdt
 Get the latest strike price of each token pair
 
 ```
-curl https://openapi.wbf.live/open/api/market
+curl https://openapi.wbfex.live/open/api/market
 ```
 
 ### HTTP Request:
@@ -1093,7 +1093,7 @@ curl https://openapi.wbf.live/open/api/market
 Query asks depth
 
 ```
-curl https://openapi.wbf.live/open/api/market_dept?symbol=btcusdt&type=step0
+curl https://openapi.wbfex.live/open/api/market_dept?symbol=btcusdt&type=step0
 ```
 
 ### HTTP Request:
@@ -1151,7 +1151,7 @@ curl https://openapi.wbf.live/open/api/market_dept?symbol=btcusdt&type=step0
 Query all symbols supported by the system
 
 ```
-curl https://openapi.wbf.live/open/api/common/symbols
+curl https://openapi.wbfex.live/open/api/common/symbols
 ```
 
 ### HTTP Request:
@@ -1211,7 +1211,7 @@ curl https://openapi.wbf.live/open/api/common/symbols
 ### Access URL
 
 `
-wss://ws.wbf.live/kline-api/ws
+wss://ws.wbfex.live/kline-api/ws
 `
 
 ### Data Compression
@@ -2002,7 +2002,7 @@ public class WsTest {
     public static void main(String[] args) {
         try {
 //wsurl 
-            String url = "wss://ws.wbf.live/kline-api/ws";
+            String url = "wss://ws.wbfex.live/kline-api/ws";
 //历史数据请求参数 
             String reqParam = "{"event":"req","params":{"channel":"market_btcusdt_trade_ticker","cb_id":"btcusdt","top":150}}";
 //订阅参数 

@@ -57,7 +57,7 @@ code_clipboard: true
 ## 接入准备
 如需使用API，请先登录网页端，通过【用户中心】-【API】创建一个API key，再据此文档详情进行开发和交易。
 
-您可以点击 [这里](https://www.wbfex.live/personal/apiManagement) 创建 API Key。
+您可以点击 [这里](https://www.wbfex.biz/personal/apiManagement) 创建 API Key。
 
 每个用户可创建5组API Key，每组API key可以绑定5个不同的IP地址。API key一旦绑定了IP地址，则只能从绑定的IP地址使用该API key调用API接口。出于安全考虑，强烈建议您为API key绑定相应的IP地址。
 
@@ -97,11 +97,11 @@ WebSocket是HTML5一种新的协议（Protocol）。它实现了客户端与服�
 
 **REST API**
 
-`https://openapi.wbfex.live`
+`https://openapi.wbfex.biz`
 
 **WebSocket**
 
-`wss://ws.wbfex.live/kline-api/ws`
+`wss://ws.wbfex.biz/kline-api/ws`
 
 为保证API服务的稳定性，建议使用日本AWS云服务器进行访问。如使用中国大陆境内的客户端服务器，连接的稳定性将难以保证。
 
@@ -120,7 +120,7 @@ API 请求在通过 internet 传输的过程中极有可能被篡改，为了确
 
 2、访问域名，后面添加换行符 "\n"
 
-例如：`openapi.wbfex.live\n`
+例如：`openapi.wbfex.biz\n`
 
 3、访问接口路径，后面添加换行符 "\n"
 
@@ -136,7 +136,7 @@ API 请求在通过 internet 传输的过程中极有可能被篡改，为了确
 
 `GET\n`
 
-`openapi.wbfex.live\n`
+`openapi.wbfex.biz\n`
 
 `/open/api/create_order\n`
 
@@ -181,7 +181,7 @@ API 请求在通过 internet 传输的过程中极有可能被篡改，为了确
 - POST请求，所有参数以JSON格式发送在请求主体（body）里
 
 一个合法的请求由以下几部分组成：
-- 方法请求地址：即访问服务器地址。https://openapi.wbfex.live/open/api/create_order
+- 方法请求地址：即访问服务器地址。https://openapi.wbfex.biz/open/api/create_order
 - 必须和可选参数。
 
   以下几个参数是所有需要验签接口必须要提供的：
@@ -828,7 +828,7 @@ REST API
 获取所有交易对行情
 
 ```
-curl https://openapi.wbfex.live/open/api/get_allticker
+curl https://openapi.wbfex.biz/open/api/get_allticker
 ```
 ### HTTP请求: 
 - GET /open/api/get_allticker
@@ -885,7 +885,7 @@ curl https://openapi.wbfex.live/open/api/get_allticker
 获取K线数据
 
 ```
-curl https://openapi.wbfex.live/open/api/get_records?symbol=btcusdt&period=15
+curl https://openapi.wbfex.biz/open/api/get_records?symbol=btcusdt&period=15
 ```
 
 ### HTTP请求:
@@ -949,7 +949,7 @@ GET /open/api/get_records
 获取当前行情
 
 ```
-curl https://openapi.wbfex.live/open/api/get_ticker?symbol=btcusdt
+curl https://openapi.wbfex.biz/open/api/get_ticker?symbol=btcusdt
 ```
 
 ### HTTP请求:
@@ -995,7 +995,7 @@ curl https://openapi.wbfex.live/open/api/get_ticker?symbol=btcusdt
 获取交易对的实时成交记录(最大返回200条最新成交记录)
 
 ```
-curl https://openapi.wbfex.live/open/api/get_trades?symbol=btcusdt
+curl https://openapi.wbfex.biz/open/api/get_trades?symbol=btcusdt
 ```
 
 ### HTTP请求:
@@ -1054,7 +1054,7 @@ curl https://openapi.wbfex.live/open/api/get_trades?symbol=btcusdt
 获取各个币对的最新成交价
 
 ```
-curl https://openapi.wbfex.live/open/api/market
+curl https://openapi.wbfex.biz/open/api/market
 ```
 
 ### HTTP请求:
@@ -1092,7 +1092,7 @@ curl https://openapi.wbfex.live/open/api/market
 查询买卖盘深度
 
 ```
-curl https://openapi.wbfex.live/open/api/market_dept?symbol=btcusdt&type=step0
+curl https://openapi.wbfex.biz/open/api/market_dept?symbol=btcusdt&type=step0
 ```
 
 ### HTTP请求:
@@ -1150,7 +1150,7 @@ curl https://openapi.wbfex.live/open/api/market_dept?symbol=btcusdt&type=step0
 查询系统支持的所有交易对及精度
 
 ```
-curl https://openapi.wbfex.live/open/api/common/symbols
+curl https://openapi.wbfex.biz/open/api/common/symbols
 ```
 
 ### HTTP请求:
@@ -1210,7 +1210,7 @@ curl https://openapi.wbfex.live/open/api/common/symbols
 ### 接入URL
 
 `
-wss://ws.wbfex.live/kline-api/ws
+wss://ws.wbfex.biz/kline-api/ws
 `
 
 ### 数据压缩
@@ -2001,7 +2001,7 @@ public class WsTest {
     public static void main(String[] args) {
         try {
 //wsurl 
-            String url = "wss://ws.wbfex.live/kline-api/ws";
+            String url = "wss://ws.wbfex.biz/kline-api/ws";
 //历史数据请求参数 
             String reqParam = "{"event":"req","params":{"channel":"market_btcusdt_trade_ticker","cb_id":"btcusdt","top":150}}";
 //订阅参数 
